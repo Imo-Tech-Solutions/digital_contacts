@@ -1,9 +1,20 @@
+import { Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
+import NavBar from './components/NavBar';
+import Home from './pages/Home.jsx'
+
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="bg-red-500">hello moiwa </h1>
-    </div>
+    <>
+        <NavBar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      
+        <Footer />
+    </>
   );
 }
 
