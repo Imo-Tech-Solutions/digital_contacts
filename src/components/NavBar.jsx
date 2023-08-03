@@ -6,9 +6,10 @@ import AOS from '../components/aosConfig';
 
 const navigation = [
   { name: "HOME", href: "/?section=home", current: true },
-  { name: "ABOUT", href: "/?section=about", current: false },
-  { name: "PUBLICATIONS", href: "/publications", current: false },
-  { name: "SERVICES", href: "/?section=services", current: false },
+  { name: "FEATURES", href: "/?section=about", current: false },
+  { name: "SCREENSHOTS", href: "/publications", current: false },
+  { name: "PRICING", href: "/?section=services", current: false },
+  { name: "DOWNLOAD", href: "/?section=services", current: false },
   { name: "CONTACT US", href: "/?section=contact", current: false },
 ];
 
@@ -74,13 +75,13 @@ function NavBar() {
                 let aosAnimation = ""; // Default empty animation
 
                  // Apply different animations based on item position
-                if (index === 1 || index === 2 || index === 3) {
+                if (index === 1 || index === 2 || index === 3 || index === 4) {
                   aosAnimation = "zoom-in"; // Apply 'zoom-in' animation to second and third items
                 }
                 if (index === 0){
                   aosAnimation = "fade-right"; // Apply 'fade-right' animation to items on the left
                 }
-                if (index === 4){
+                if (index === 5){
                   aosAnimation = "fade-left"; // Apply 'fade-left' animation to items on the right
                 }
 
