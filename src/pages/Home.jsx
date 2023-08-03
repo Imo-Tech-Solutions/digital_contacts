@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import mobile from '../images/mobile_qrl.png'
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -45,7 +46,7 @@ function Home() {
             className="
             flex flex-col justify-center
             text-center rounded-sm
-            lg:max-w-3xl xl:max-w-3xl lg:text-left"
+            lg:max-w-2xl xl:max-w-3xl lg:text-left"
           >
             <h1 className="text-4xl font-bold leading-none sm:text-5xl text-purple-header">
               Scan, create and share <br />
@@ -73,7 +74,7 @@ function Home() {
                 dark:bg-purple dark:text-white
                 transform hover:scale-110 transition-transform duration-300"
               >
-                Download App
+                Order Sticker Now
               </a>
             </div>
           </div>
@@ -83,11 +84,11 @@ function Home() {
             lg:mt-0 h-3/4 sm:h-80 lg:h-96
             xl:h-112 2xl:h-128"
           >
-            {/* <img
-              src={fatu}
+            <img
+              src={mobile}
               alt="Service"
               className="object-contain object-center h-full w-full rounded-t-3xl"
-            /> */}
+            />
           </div>
         </div>
       </section>
