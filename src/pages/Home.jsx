@@ -30,7 +30,7 @@ function Home() {
     <>
       <section
         className="
-      text-gray-800 w-full flex dark:bg-hero-bg
+        text-gray-800 w-full flex dark:bg-hero-bg
         items-center justify-center"
         id="home"
       >
@@ -45,7 +45,7 @@ function Home() {
             className="
             flex flex-col justify-center
             text-center rounded-sm
-            lg:max-w-md xl:max-w-lg lg:text-left"
+            lg:max-w-3xl xl:max-w-3xl lg:text-left"
           >
             <h1 className="text-4xl font-bold leading-none sm:text-5xl text-purple-header">
               Scan, create and share <br />
