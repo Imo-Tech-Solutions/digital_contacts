@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import hero_background from '../images/hero_background.png'
 import mobile from '../images/mobile_qrl.png'
 
 import AOS from "aos";
@@ -31,8 +32,13 @@ function Home() {
     <>
       <section
         className="
-        text-gray-800 w-full flex dark:bg-hero-bg
+        text-gray-800 w-full flex
         items-center justify-center"
+        style={{ backgroundImage: `url(${hero_background})`,
+                  backgroundSize: 'cover',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundPosition: 'center',
+      }}
         id="home"
       >
         <div
@@ -40,7 +46,7 @@ function Home() {
           container flex flex-col justify-center p-6
           sm:py-16 lg:py-24 lg:px-14 lg:flex-row
           lg:justify-between pb-12 pt-20
-          xl:ml-5 dark:bg-hero-bg "
+          xl:ml-5  "
         >
           <div
             className="
@@ -65,7 +71,7 @@ function Home() {
             </p>
             <div
               className="flex flex-col space-y-4 sm:items-center sm:justify-center
-                            sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start"
+                          sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start"
             >
               <a
                 rel="get in touch"
