@@ -111,6 +111,31 @@ function Home() {
         </h2>
         < FeaturesCard />
       </section>
+
+      <section
+      className="text-white w-full h-screen flex items-center justify-center bg-gray-200"
+      // style={{
+      //   backgroundImage: `url(${hero_background})`,
+      //   backgroundSize: 'cover',
+      //   backgroundRepeat: 'no-repeat',
+      //   backgroundPosition: 'center',
+      // }}
+      id="home"
+    >
+      <div className="bg-black bg-opacity-70 p-12 rounded-lg shadow-xl">
+        <h2 className="text-4xl font-semibold mb-6">Why Choose Us?</h2>
+        <ul className="list-disc list-inside text-xl">
+          <li className="mb-4">⭐ React provides efficient and performant UI rendering.</li>
+          <li className="mb-4">⚡ Tailwind CSS offers a highly customizable design system.</li>
+          <li className="mb-4">🔧 React's component-based approach enhances code organization.</li>
+          <li className="mb-4">🎨 Tailwind CSS lets you create beautiful designs without writing custom CSS.</li>
+          <li className="mb-4">🌐 React allows building dynamic and interactive web applications.</li>
+          <li className="mb-4">📱 Tailwind CSS is responsive by default, perfect for mobile-friendly sites.</li>
+        </ul>
+        <p className="text-sm">Let's combine the power of React and the flexibility of Tailwind CSS to create stunning user experiences!</p>
+        <button className="mt-6 px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full shadow-lg focus:outline-none">Get Started</button>
+      </div>
+    </section>
     </>
   );
 }
