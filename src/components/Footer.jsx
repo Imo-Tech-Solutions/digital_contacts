@@ -16,7 +16,7 @@ function Footer() {
               Address: 123 Street, usa, United State
             </p> */}
             <p className="text-gray-600 mt-1">Phone: +1 00 000 000</p>
-            <p className="text-gray-600 mt-1">Email: amarafatue@gmail.com</p>
+            <p className="text-gray-600 mt-1">Email: info@imo-tech.com</p>
           </div>
           <div className="mt-4 md:mt-0">
             <h4 className="text-gray-800 uppercase font-semibold">Social Media</h4>
@@ -50,9 +50,9 @@ function Footer() {
         </div>
         <hr className="border-gray-600 my-6" />
         <div className="text-center text-gray-500 text-sm">
-          &copy; {new Date().getFullYear()} Fatu Amara. All rights reserved.
-          ~ Design By <span className='hover:text-gray-800'> <a href='https://github.com/samuelmoiwa'
-          target="_blank" rel="noopener noreferrer"> Abdulai Samuel Moiwa </a></span>
+          &copy; {new Date().getFullYear()} IMO-Technology. All rights reserved.
+          ~ Design By <span className='hover:text-gray-800'> <a href='#'
+          target="_blank" rel="noopener noreferrer"> IMO Technology </a></span>
         </div>
       </div>
     </footer>
