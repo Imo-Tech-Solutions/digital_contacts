@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import hero_background from '../images/hero_background.png'
 import mobile from '../images/mobile_qrl.png'
 import FeaturesCard from "../components/features";
+import ContactUs from "../components/ContactUs";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -220,6 +221,10 @@ function Home() {
           ))}
         </div>
       </div>
+    </section>
+
+    <section>
+      < ContactUs />
     </section>
     </>
   );
