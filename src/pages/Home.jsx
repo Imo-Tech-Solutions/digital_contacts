@@ -49,7 +49,7 @@ function Home() {
     {
       title: 'Premium Version',
       description: 'Access to all features',
-      price: '$9.99/month',
+      price: 'Nle50.99/month',
       features: [
         'Unlimited usage',
         'Priority customer support',
@@ -62,7 +62,7 @@ function Home() {
     {
       title: 'QRcard Premium',
       description: 'Access to advanced features',
-      price: '$19.99/month',
+      price: 'Nle80.99/month',
       features: [
         'Unlimited usage',
         'Priority customer support',
