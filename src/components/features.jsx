@@ -54,7 +54,7 @@ const Card = ({ icon, heading, description }) => {
 
 const FeaturesCard = () => {
   return (
-    <div className="flex flex-wrap -mx-4 w-full justify-center">
+    <div className="flex flex-wrap w-full justify-center">
       {cardData.map((card) => (
         <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 p-4" key={card.id}>
           <Card
