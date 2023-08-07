@@ -11,7 +11,7 @@ import { IoIosSend } from "react-icons/io";
 
 import mailBox from "../lottieFile/contact_us_lottieFile.json";
 
-import gitHub from "../icons/icon_github.svg";
+import twitter from "../icons/icons_Twitter.svg";
 import linkedIn from "../icons/icon_linkedin.svg";
 import facebook from "../icons/icon_facebook.svg";
 import phone from "../icons/icon_phone.svg";
@@ -88,7 +88,7 @@ function ContactUs() {
               <div class="text-gray-600 mb-8 text-justify">
                 <h1 className="text-4xl font-bold leading-none sm:text-4xl text-purple-header">
                   READY <br />
-                  <span className="text-cl_blue-4"> FOR </span>
+                  <span className="text-purple"> FOR </span>
                   PARTNERSHIP?
                 </h1>
               </div>
@@ -111,7 +111,7 @@ function ContactUs() {
                       } appearance-none border rounded-lg w-full py-2 px-3 pl-10 text-gray-700 leading-tight
                       focus:outline-none focus:border-purple`}
                       type="text"
-                      placeholder="Samuel Moiwa"
+                      placeholder="Enter your full name"
                       {...register("name", { required: true })}
                     />
                   </div>
@@ -270,17 +270,17 @@ function ContactUs() {
               >
                 <a
                   rel="GitHub noreferrer"
-                  href="https://github.com/samuelmoiwa"
+                  href="#"
                   target="_blank"
                   className="px-4 py-2 flex justify-center
                     transform hover:scale-110 transition-transform duration-300"
                 >
-                  <img class="w-10 h-10" src={gitHub} alt="image" />
+                  <img class="w-10 h-10" src={twitter} alt="image" />
                 </a>
 
                 <a
                   rel="LinkedIn noreferrer"
-                  href="https://www.linkedin.com/in/samuelmoiwa/"
+                  href="#"
                   target="_blank"
                   className="px-4 py-2 flex justify-center
                     transform hover:scale-110 transition-transform duration-300"
@@ -290,7 +290,7 @@ function ContactUs() {
 
                 <a
                   rel="facebook noreferrer"
-                  href="https://www.facebook.com/samuel.moiwa"
+                  href="#"
                   target="_blank"
                   className="px-4 py-2 flex justify-center
                     transform hover:scale-110 transition-transform duration-300"
@@ -300,7 +300,7 @@ function ContactUs() {
 
                 <a
                   rel="phone"
-                  href="tel: +23279356563"
+                  href="tel: +23279000000"
                   className="px-4 py-2 flex justify-center
                     transform hover:scale-110 transition-transform duration-300"
                 >
