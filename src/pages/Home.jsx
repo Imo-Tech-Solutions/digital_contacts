@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import hero_background from '../images/hero_background.png'
 import mobile from '../images/mobile_qrl.png'
+import FeaturesCard from "../components/features";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -97,6 +98,18 @@ function Home() {
             />
           </div>
         </div>
+      </section>
+
+      <section className=" my-16"
+      >
+        <h2
+          className="text-2xl text-center font-bold leading-none sm:text-3xl
+          text-purple-header my-6"
+          data-aos="fade-right"
+        >
+          Features
+        </h2>
+        < FeaturesCard />
       </section>
     </>
   );
