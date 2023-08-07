@@ -29,6 +29,52 @@ function Home() {
     AOS.refresh();
   }, []);
 
+
+
+
+  const plans = [
+    {
+      title: 'Free',
+      description: 'Access to basic features',
+      price: 'Free',
+      features: [
+        'Limited usage per month',
+        'Basic customer support',
+        'Ads-supported',
+        'Standard designs',
+        'No priority access',
+      ],
+      buttonColor: 'bg-gray-600',
+    },
+    {
+      title: 'Premium Version',
+      description: 'Access to all features',
+      price: '$9.99/month',
+      features: [
+        'Unlimited usage',
+        'Priority customer support',
+        'Ad-free experience',
+        'Premium designs',
+        'Monthly data export',
+      ],
+      buttonColor: 'bg-red-600', // Set the button background color to red
+    },
+    {
+      title: 'QRcard Premium',
+      description: 'Access to advanced features',
+      price: '$19.99/month',
+      features: [
+        'Unlimited usage',
+        'Priority customer support',
+        'Ad-free experience',
+        'Premium designs',
+        'Unlimited data export',
+      ],
+      buttonColor: 'bg-green-600', // Set the button background color to green
+    },
+  ];
+
+
   return (
     <>
       <section
@@ -134,6 +180,48 @@ function Home() {
         </ul>
         <p className="text-sm">Let's combine the power of React and the flexibility of Tailwind CSS to create stunning user experiences!</p>
         <button className="mt-6 px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full shadow-lg focus:outline-none">Get Started</button>
+      </div>
+    </section>
+
+
+
+
+    <section className="bg-gray-100 py-16">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-4xl font-semibold text-gray-800 mb-8 text-center">Choose Your Plan</h2>
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+          {plans.map((plan, index) => (
+            <div key={index} className="bg-white rounded-lg p-8 shadow-md">
+              <h3 className="text-xl font-semibold mb-4 text-center">{plan.title}</h3>
+              <p className="text-gray-600 mb-6 text-center">{plan.description}</p>
+              <p className="text-3xl font-semibold mb-6 text-center">{plan.price}</p>
+              <ul className="text-sm text-gray-600">
+                {plan.features.map((feature, index) => (
+                  <li key={index} className="flex items-center mb-3">
+                    <svg
+                      className="w-4 h-4 mr-2 text-green-600"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M3 10a7 7 0 1114 0 7 7 0 01-14 0zm6.293 2.293a1 1 0 011.414 0L12 13.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-2-2a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+              <button
+                className={`w-full text-white rounded-md py-3 px-6 font-semibold hover:opacity-90 focus:outline-none ${plan.buttonColor}`}
+              >
+                Get Started
+              </button>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
     </>
