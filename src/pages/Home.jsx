@@ -186,7 +186,7 @@ function Home() {
 
 
 
-    <section className="bg-gray-100 py-16">
+    <section className="bg-white py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-semibold text-gray-800 mb-8 text-center">Choose Your Plan</h2>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
