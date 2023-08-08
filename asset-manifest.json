@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/digital_contacts/static/css/main.5dfb1ab2.css",
+    "main.js": "/digital_contacts/static/js/main.8994d565.js",
+    "static/media/qel_scanner.png": "/digital_contacts/static/media/qel_scanner.71d400bacd11d335acf8.png",
+    "static/media/logo_one.png": "/digital_contacts/static/media/logo_one.a7f5cef7d9c0809c5c29.png",
+    "static/media/mobile_qrl.svg": "/digital_contacts/static/media/mobile_qrl.6c771f7fb8efff10119c7623e912c44b.svg",
+    "static/media/icon_phone.svg": "/digital_contacts/static/media/icon_phone.3603905ac59f714d0924c8ae6297d783.svg",
+    "static/media/icons_Twitter.svg": "/digital_contacts/static/media/icons_Twitter.a13b91e5d31d1ba13ef95fc38f1b9802.svg",
+    "static/media/backup_icon.svg": "/digital_contacts/static/media/backup_icon.eeb8bc745bd76b2576696cccf2725952.svg",
+    "static/media/create_icon.svg": "/digital_contacts/static/media/create_icon.a08c34f0f528b23ac37ae0cc51c60207.svg",
+    "index.html": "/digital_contacts/index.html",
+    "static/media/icons_arrow.svg": "/digital_contacts/static/media/icons_arrow.4559cf0e4edafac29cfe8ee84f6e7d9b.svg",
+    "static/media/icon_linkedin.svg": "/digital_contacts/static/media/icon_linkedin.056704021e50d667e7612f590128f5c0.svg",
+    "static/media/share_icon.svg": "/digital_contacts/static/media/share_icon.abdc45486f3bd16756f3cdf4f44f6187.svg",
+    "static/media/icon_facebook.svg": "/digital_contacts/static/media/icon_facebook.5fd76724b161adf1e13d2b8a07506745.svg",
+    "main.5dfb1ab2.css.map": "/digital_contacts/static/css/main.5dfb1ab2.css.map",
+    "main.8994d565.js.map": "/digital_contacts/static/js/main.8994d565.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5dfb1ab2.css",
+    "static/js/main.8994d565.js"
+  ]
+}
