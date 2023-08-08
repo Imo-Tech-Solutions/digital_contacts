@@ -100,7 +100,7 @@ function Home() {
             className="
             flex flex-col justify-center
             text-center rounded-sm
-            lg:max-w-2xl xl:max-w-3xl lg:text-left"
+            lg:max-w-xl xl:max-w-2xl lg:text-left"
           >
             <h1 className="text-4xl font-bold leading-none sm:text-5xl text-purple-header">
               Scan, create and share <br />
@@ -135,8 +135,9 @@ function Home() {
           <div
             className="
             flex items-center justify-center p-6 mt-8
-            lg:mt-0 h-3/4 sm:h-80 lg:h-96
-            xl:h-112 2xl:h-128"
+            lg:max-w-3xl xl:max-w-3xl
+            lg:w-2/4
+            "
           >
             <img
               src={mobile}
