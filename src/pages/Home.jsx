@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import hero_background from '../images/hero_background.png'
-import mobile from '../images/mobile_qrl.png'
+import mobile from '../images/mobile_qrl.svg'
 import FeaturesCard from "../components/features";
 import ContactUs from "../components/ContactUs";
 
@@ -80,13 +80,13 @@ function Home() {
     <>
       <section
         className="
-        text-gray-800 w-full flex
+        text-gray-800 w-full flex bg-hero-bg
         items-center justify-center"
-        style={{ backgroundImage: `url(${hero_background})`,
-                  backgroundSize: 'cover',
-                  backgroundRepeat: 'no-repeat',
-                  backgroundPosition: 'center',
-      }}
+      //   style={{ backgroundImage: `url(${hero_background})`,
+      //             backgroundSize: 'cover',
+      //             backgroundRepeat: 'no-repeat',
+      //             backgroundPosition: 'center',
+      // }}
         id="home"
       >
         <div
