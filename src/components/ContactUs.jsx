@@ -217,8 +217,8 @@ function ContactUs() {
                 <button
   className={`${
     loading
-      ? "bg-cl_blue-4 cursor-not-allowed"
-      : "bg-cl_blue-4 transform hover:scale-110 transition-transform duration-300"
+      ? "bg-purple cursor-not-allowed"
+      : "bg-purple transform hover:scale-110 transition-transform duration-300"
   } text-white font-bold py-2 px-4 rounded-lg flex items-center focus:outline-none`}
   type="submit"
   disabled={loading}
