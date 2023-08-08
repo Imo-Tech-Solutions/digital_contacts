@@ -1,13 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-// import logo from '../images/logo.png'
+import logo from '../images/logo_one.png'
 
 function Footer() {
   return (
     <footer className="bg-gray-100 py-8">
       <div className="container mx-auto px-4">
         <div className="flex justify-center items-center">
-          {/* <img src={logo} alt="Logo" className="h-16 w-52 mr-2" /> */}
+          <img src={logo} alt="Logo" className="h-16 w-72 mr-2" />
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-4">
           <div className="md:mr-8">
