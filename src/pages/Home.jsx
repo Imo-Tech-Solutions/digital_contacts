@@ -169,16 +169,10 @@ function Home() {
       </section>
 
       <section
-      className="text-white w-full h-screen flex items-center justify-center bg-gray-200"
-      // style={{
-      //   backgroundImage: `url(${hero_background})`,
-      //   backgroundSize: 'cover',
-      //   backgroundRepeat: 'no-repeat',
-      //   backgroundPosition: 'center',
-      // }}
+      className="text-white w-full h-screen flex items-center justify-center bg-purple-light"
       id="home"
     >
-      <div className="bg-black bg-opacity-70 p-12 rounded-lg shadow-xl">
+      <div className="bg-purple bg-opacity-70 p-12 rounded-lg shadow-xl">
         <h2 className="text-4xl font-semibold mb-6">Why Choose Us?</h2>
         <ul className="list-disc list-inside text-xl">
           <li className="mb-4">⭐ React provides efficient and performant UI rendering.</li>
