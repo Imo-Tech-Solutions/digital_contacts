@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/digital_contacts/static/css/main.5dfb1ab2.css",
-    "main.js": "/digital_contacts/static/js/main.8994d565.js",
+    "main.css": "/digital_contacts/static/css/main.045bc902.css",
+    "main.js": "/digital_contacts/static/js/main.82862baf.js",
     "static/media/qel_scanner.png": "/digital_contacts/static/media/qel_scanner.71d400bacd11d335acf8.png",
     "static/media/logo_one.png": "/digital_contacts/static/media/logo_one.a7f5cef7d9c0809c5c29.png",
     "static/media/mobile_qrl.svg": "/digital_contacts/static/media/mobile_qrl.6c771f7fb8efff10119c7623e912c44b.svg",
@@ -14,11 +14,11 @@
     "static/media/icon_linkedin.svg": "/digital_contacts/static/media/icon_linkedin.056704021e50d667e7612f590128f5c0.svg",
     "static/media/share_icon.svg": "/digital_contacts/static/media/share_icon.abdc45486f3bd16756f3cdf4f44f6187.svg",
     "static/media/icon_facebook.svg": "/digital_contacts/static/media/icon_facebook.5fd76724b161adf1e13d2b8a07506745.svg",
-    "main.5dfb1ab2.css.map": "/digital_contacts/static/css/main.5dfb1ab2.css.map",
-    "main.8994d565.js.map": "/digital_contacts/static/js/main.8994d565.js.map"
+    "main.045bc902.css.map": "/digital_contacts/static/css/main.045bc902.css.map",
+    "main.82862baf.js.map": "/digital_contacts/static/js/main.82862baf.js.map"
   },
   "entrypoints": [
-    "static/css/main.5dfb1ab2.css",
-    "static/js/main.8994d565.js"
+    "static/css/main.045bc902.css",
+    "static/js/main.82862baf.js"
   ]
 }
