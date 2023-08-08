@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         'hero-bg': '#F7F7F7',
         'purple': '#5E3BEE',
+        'purple-light': '#BEB2EE',
         'purple-header': '#282938',
         'purple-body': '#1C1E53',
       },
