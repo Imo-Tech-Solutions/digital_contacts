@@ -1,6 +1,8 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import hero_background from '../images/hero_background.png'
+import arrowIcon from "../images/icons_arrow.svg"
 import mobile from '../images/mobile_qrl.svg'
 import FeaturesCard from "../components/features";
 import ContactUs from "../components/ContactUs";
@@ -107,7 +109,7 @@ function Home() {
               <span className="text-purple"> business cards </span>
               with only one app.
             </h1>
-            <p className="mt-6 mb-8 text-lg sm:mb-12 text-purple-body">
+            <p className="mt-6 mb-8 text-lg sm:mb-12 text-purple-body text-justify">
               DigiCard is an eco-friendly business card application which can be
               used on phones and tablets. It can scan your printed business
               cards and save personal information automatically. Therefore, you
@@ -118,15 +120,21 @@ function Home() {
               <span className="text-blue-500"></span>
             </p>
             <div
-              className="flex flex-col space-y-4 sm:items-center sm:justify-center
-                          sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start"
+              className="flex flex-row space-y-4 sm:items-center sm:justify-center
+                          items-center justify-center
+                          sm:space-y-0 sm:space-x-4 lg:justify-start"
             >
+              <img
+              src={arrowIcon}
+              alt="arrow"
+              className="w-20"
+              />
               <a
                 rel="get in touch"
-                href="mailto:amarafatue@gmail.com"
+                href="#"
                 className="px-8 py-3 text-lg font-semibold rounded
-                dark:bg-purple dark:text-white
-                transform hover:scale-110 transition-transform duration-300"
+                bg-purple text-white transform hover:scale-75
+                transition-transform duration-700"
               >
                 Order Sticker Now
               </a>
@@ -142,7 +150,7 @@ function Home() {
             <img
               src={mobile}
               alt="Service"
-              className="object-contain object-center h-full w-full rounded-t-3xl"
+              className="object-contain object-center h-full w-full"
             />
           </div>
         </div>
