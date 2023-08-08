@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'hero-bg': '#F5FCFF',
+        'hero-bg': '#F7F7F7',
         'purple': '#5E3BEE',
         'purple-header': '#282938',
         'purple-body': '#1C1E53',
