@@ -1,0 +1,25 @@
+### first stage
+FROM node:19-alpine3.15 AS builder
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+
+RUN npm ci --force
+
+COPY . .
+
+
+RUN npm run build
+
+### second stage copy to  nginx
+FROM nginx:alpine
+
+ARG NGINXFILE
+
+COPY ${NGINXFILE} /etc/nginx/conf.d/default.conf
+
+COPY --from=builder /usr/src/app/build /usr/share/nginx/html
+
+EXPOSE 3000

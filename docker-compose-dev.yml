@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  web:
+    image: imotechsl/dit:${ENV}
+    container_name: dit-web-${ENV}
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    restart: always
+    ports:
+      - 3000:3000
+    stdin_open: true
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/node_modules
+  # nginx:
+  #   image: imotechsl/dit-nginx:${ENV}
+  #   build:
+  #     context: ./nginx
+  #   container_name: dit-nginx
+  #   ports:
+  #     - 80:80
+  #     - 443:443
+
+
