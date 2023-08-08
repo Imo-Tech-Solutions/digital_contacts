@@ -234,7 +234,7 @@ function Home() {
         </div>
       </section>
 
-      <section className=" my-16"
+      <section className="my-20 sm:my-16"
       >
         <h2
           className="text-4xl text-center font-bold leading-none sm:text-3xl
@@ -247,7 +247,7 @@ function Home() {
       </section>
 
       <section
-      className="text-white w-full h-screen flex items-center justify-center bg-purple-light"
+      className="text-white w-full h-screen flex items-center justify-center bg-purple-light my-16"
       id="home"
     >
       <div className="bg-purple bg-opacity-70 p-12 rounded-lg shadow-xl">
