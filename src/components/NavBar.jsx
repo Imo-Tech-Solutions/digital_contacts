@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
+import logo from "../images/logo_one.png"
 
 import AOS from '../components/aosConfig';
 
@@ -29,7 +30,7 @@ function NavBar() {
         <div className="flex justify-between h-16">
           <div className="flex items-center ml-20">
             <NavLink to="/" className="text-xl font-bold text-gray-800">
-              {/* <img
+              <img
                 className="block h-8 w-auto lg:hidden"
                 src={logo}
                 alt="Your Company"
@@ -38,7 +39,7 @@ function NavBar() {
                 className="hidden h-8 w-auto lg:block"
                 src={logo}
                 alt="Your Company"
-              /> */}
+              />
             </NavLink>
           </div>
 
