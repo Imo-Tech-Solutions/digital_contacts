@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import hero_background from '../images/hero_background.png'
+import qrl_scanner from "../images/qel_scanner.png"
 import arrowIcon from "../images/icons_arrow.svg"
 import mobile from '../images/mobile_qrl.svg'
 import FeaturesCard from "../components/features";
@@ -186,6 +186,67 @@ function Home() {
         <button className="mt-6 px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full shadow-lg focus:outline-none">Get Started</button>
       </div>
     </section>
+
+
+
+    <section class="bg-gray-100 border-b py-8 mt-16" id="everything">
+        <div class="container max-w-5xl mx-auto m-8">
+          <div className="text-center py-2 flex flex-col items-center justify-center">
+            <p
+              className="text-2xl font-bold leading-none sm:text-3xl
+          text-purple-header mt-6"
+            >
+              Everything you need to know to get started
+            </p>
+            <div className="w-16 h-1 bg-purple mt-2" data-aos="fade-right">
+              {" "}
+            </div>
+            <p
+              className="text-2x1 leading-none sm:text-2xl
+                          text-purple-header my-6"
+            >
+              In this section you will find the basic concepts and the necessary <br />
+              steps to start enjoying the benefits of using QR.
+            </p>
+          </div>
+          <div class="w-full mb-4">
+            <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+          </div>
+
+          <div
+            class="flex flex-wrap flex-col-reverse sm:flex-row"
+            data-aos="fade-up"
+          >
+            <div class="w-full sm:w-1/2 p-6">
+              <p class="text-gray-600 mb-8 text-justify">
+                  Fatu Amara is a Project Manager and has 2+ years
+                  of full-time experience working on city-wide initiatives that promote
+                  the wellbeing of New Yorkers. She has experience in management, coordination,
+                  qualitative and quantitative data analysis.
+                <br />
+                <br />
+                  As a Watson Fellow, she worked on public health issues in the US, Rwanda, and the UK.
+                  Her work includes program management, qualitative and quantitative research analysis,
+                  literature reviews, and scientific journal writing on SARS, Ebola, and COVID-19 issues.
+                  She plans to work at the intersection of health and policy to lead large scale programs
+                  that ensure the well-being of vulnerable communities.
+                <br />
+                <br />
+                  She graduated with honors and was awarded the American Chemical Society (ACS) Accredited BS
+                  in Chemistry from CUNY College of Staten Island (CSI). As President of the Student Government,
+                  she represented the 14,000 student body as an Executive Board member to five college boards,
+                  managed the $400,000 budget, and developed the Student Government Internship Program.
+              </p>
+            </div>
+            <div class="w-full sm:w-1/2 p-6 sm:order-first">
+              <img class="w-full rounded" src={qrl_scanner} alt="image" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
 
     <section className="bg-white py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
