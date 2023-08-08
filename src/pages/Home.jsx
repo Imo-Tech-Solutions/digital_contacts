@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
@@ -7,8 +8,47 @@ import mobile from '../images/mobile_qrl.svg'
 import FeaturesCard from "../components/features";
 import ContactUs from "../components/ContactUs";
 
+import { useCollapse } from 'react-collapsed';
+
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+
+
+
+const CollapsibleItem = ({ title, content }) => {
+  const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
+
+  return (
+    <div className="border rounded-lg p-4 mb-4">
+      <button
+        className="flex items-center justify-between w-full mb-2 focus:outline-none"
+        {...getToggleProps()}
+      >
+        <span className="text-lg font-semibold">{title}</span>
+        <span className="transform transition-transform duration-200">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className={`h-5 w-5 ${isExpanded ? 'rotate-180' : 'rotate-0'}`}
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fillRule="evenodd"
+              d="M6.293 7.293a1 1 0 0 1 1.414 0L10 9.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
+            />
+          </svg>
+        </span>
+      </button>
+      <div {...getCollapseProps()} className="mt-2">
+        <div className="px-4 py-2">{content}</div>
+      </div>
+    </div>
+  );
+};
+
+
+
 
 function Home() {
   const location = useLocation();
@@ -31,6 +71,44 @@ function Home() {
     });
     AOS.refresh();
   }, []);
+
+
+    // State to track the expanded state of each collapsible item
+    const [expandedItems, setExpandedItems] = useState([]);
+
+    // Function to toggle the expanded state of an item
+    const toggleItem = (index) => {
+      const updatedExpandedItems = [...expandedItems];
+      updatedExpandedItems[index] = !updatedExpandedItems[index];
+      setExpandedItems(updatedExpandedItems);
+    };
+
+  const collapsItems = [
+    {
+      title: 'What is a QRL code?',
+      content: `The term “QR” stands for “quick response” and refers to instant access to the information contained in
+                the Code. It is, in short, the evolution of the barcode, made up of patterns of black and white pixels.
+                Denso Wave, a Japanese subsidiary of Toyota Denso, developed them in order to mark the components of
+                their cars and thus speed up logistics in their production. Currently, it has gained great popularity,
+                due to its versatility and accessibility, thanks to the functions of smart phones.`,
+    },
+    {
+      title: 'Know the benefits of using QR',
+      content: `You will have noticed that more and more companies choose to include QR, as a fundamental resource
+                for the marketing and commercialization of their products and services. Its growing popularity is
+                due to the multiplicity of uses that you can give it: to receive payments from your clients, share
+                links to web pages, catalogs and price lists, receive comments on your products or services, invite
+                the client to share images or videos , promote your business events and much more, with just a scan!`,
+    },
+    {
+      title: 'How to start using QR',
+      content: `Many devices already have a built-in QR code reader. In this case, all you have to do is open the
+                camera on your mobile phone and hold it over a code for a few seconds, until a notification appears
+                on the screen. In case this does not happen, go to settings to check that QR scanning is enabled.
+                If you don't have the feature, just download and install a QR code reader from your app store.`,
+    },
+    // Add more items as needed
+  ];
 
 
 
@@ -159,7 +237,7 @@ function Home() {
       <section className=" my-16"
       >
         <h2
-          className="text-2xl text-center font-bold leading-none sm:text-3xl
+          className="text-4xl text-center font-bold leading-none sm:text-3xl
           text-purple-header my-6"
           data-aos="fade-right"
         >
@@ -193,7 +271,7 @@ function Home() {
         <div class="container max-w-5xl mx-auto m-8">
           <div className="text-center py-2 flex flex-col items-center justify-center">
             <p
-              className="text-2xl font-bold leading-none sm:text-3xl
+              className="text-4xl font-bold leading-none sm:text-3xl
           text-purple-header mt-6"
             >
               Everything you need to know to get started
@@ -214,32 +292,27 @@ function Home() {
           </div>
 
           <div
-            class="flex flex-wrap flex-col-reverse sm:flex-row"
+            class="flex flex-wrap flex-col-reverse sm:flex-row justify-center items-center"
             data-aos="fade-up"
           >
             <div class="w-full sm:w-1/2 p-6">
-              <p class="text-gray-600 mb-8 text-justify">
-                  Fatu Amara is a Project Manager and has 2+ years
-                  of full-time experience working on city-wide initiatives that promote
-                  the wellbeing of New Yorkers. She has experience in management, coordination,
-                  qualitative and quantitative data analysis.
-                <br />
-                <br />
-                  As a Watson Fellow, she worked on public health issues in the US, Rwanda, and the UK.
-                  Her work includes program management, qualitative and quantitative research analysis,
-                  literature reviews, and scientific journal writing on SARS, Ebola, and COVID-19 issues.
-                  She plans to work at the intersection of health and policy to lead large scale programs
-                  that ensure the well-being of vulnerable communities.
-                <br />
-                <br />
-                  She graduated with honors and was awarded the American Chemical Society (ACS) Accredited BS
-                  in Chemistry from CUNY College of Staten Island (CSI). As President of the Student Government,
-                  she represented the 14,000 student body as an Executive Board member to five college boards,
-                  managed the $400,000 budget, and developed the Student Government Internship Program.
-              </p>
+
+
+            <div className="p-4">
+                {collapsItems.map((item, index) => (
+                  <CollapsibleItem
+                    key={index}
+                    title={item.title}
+                    content={item.content}
+                    isExpanded={expandedItems[index] || false}
+                    onToggle={() => toggleItem(index)}
+                  />
+                ))}
+              </div>
+
             </div>
-            <div class="w-full sm:w-1/2 p-6 sm:order-first">
-              <img class="w-full rounded" src={qrl_scanner} alt="image" />
+            <div class="w-full sm:w-2/5 w-1/2 p-6 sm:order-first ">
+              <img class="w-full" src={qrl_scanner} alt="image" />
             </div>
           </div>
         </div>
