@@ -83,6 +83,8 @@ function Home() {
     },
   ];
 
+  const navToPricing = "/?section=pricing"
+
 
   return (
     <>
@@ -90,11 +92,6 @@ function Home() {
         className="
         text-gray-800 w-full flex bg-hero-bg
         items-center justify-center"
-      //   style={{ backgroundImage: `url(${hero_background})`,
-      //             backgroundSize: 'cover',
-      //             backgroundRepeat: 'no-repeat',
-      //             backgroundPosition: 'center',
-      // }}
         id="home"
       >
         <div
@@ -135,15 +132,15 @@ function Home() {
               alt="arrow"
               className="w-20"
               />
-              <a
+              <Link
                 rel="get in touch"
-                href="#"
+                to={navToPricing}
                 className="px-8 py-3 text-lg font-semibold rounded
                 bg-purple text-white transform hover:scale-75
                 transition-transform duration-700"
               >
                 Order Sticker Now
-              </a>
+              </Link>
             </div>
           </div>
           <div
@@ -167,6 +164,7 @@ function Home() {
         <h2
           className="text-4xl text-center font-bold leading-none sm:text-3xl
           text-purple-header my-6"
+          id="features"
           data-aos="fade-right"
         >
           Features
@@ -192,8 +190,6 @@ function Home() {
         <button className="mt-6 px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full shadow-lg focus:outline-none">Get Started</button>
       </div>
     </section>
-
-
 
     <section class="bg-gray-100 border-b py-8 mt-16" id="everything">
         <div class="container max-w-5xl mx-auto m-8">
@@ -226,53 +222,43 @@ function Home() {
             data-aos="fade-up"
           >
             <div class="w-full sm:w-1/2 p-6">
-
-
-            <div className="p-4">
-
-
-
-            <Accordion
-              title="What is a QRL code?"
-              content="
-                The term “QR” stands for “quick response” and refers to instant access to the information contained in
-                the Code. It is, in short, the evolution of the barcode, made up of patterns of black and white pixels.
-                Denso Wave, a Japanese subsidiary of Toyota Denso, developed them in order to mark the components of
-                their cars and thus speed up logistics in their production. Currently, it has gained great popularity,
-                due to its versatility and accessibility, thanks to the functions of smart phones.
-              "
-              openSection={openSection}
-              setOpenSection={setOpenSection}
-            />
-            <Accordion
-              title="Know the benefits of using QR"
-              content="
-                You will have noticed that more and more companies choose to include QR, as a fundamental resource
-                for the marketing and commercialization of their products and services. Its growing popularity is
-                due to the multiplicity of uses that you can give it: to receive payments from your clients, share
-                links to web pages, catalogs and price lists, receive comments on your products or services, invite
-                the client to share images or videos , promote your business events and much more, with just a scan!
-              "
-              openSection={openSection}
-              setOpenSection={setOpenSection}
-            />
-            <Accordion
-              title="How to start using QR"
-              content="
-                Many devices already have a built-in QR code reader. In this case, all you have to do is open the
-                camera on your mobile phone and hold it over a code for a few seconds, until a notification appears
-                on the screen. In case this does not happen, go to settings to check that QR scanning is enabled.
-                If you don't have the feature, just download and install a QR code reader from your app store.
-
-              "
-              openSection={openSection}
-              setOpenSection={setOpenSection}
-            />
-
-
-
-            </div>
-
+              <div className="p-4">
+                <Accordion
+                  title="What is a QRL code?"
+                  content="
+                    The term “QR” stands for “quick response” and refers to instant access to the information contained in
+                    the Code. It is, in short, the evolution of the barcode, made up of patterns of black and white pixels.
+                    Denso Wave, a Japanese subsidiary of Toyota Denso, developed them in order to mark the components of
+                    their cars and thus speed up logistics in their production. Currently, it has gained great popularity,
+                    due to its versatility and accessibility, thanks to the functions of smart phones.
+                  "
+                  openSection={openSection}
+                  setOpenSection={setOpenSection}
+                />
+                <Accordion
+                  title="Know the benefits of using QR"
+                  content="
+                    You will have noticed that more and more companies choose to include QR, as a fundamental resource
+                    for the marketing and commercialization of their products and services. Its growing popularity is
+                    due to the multiplicity of uses that you can give it: to receive payments from your clients, share
+                    links to web pages, catalogs and price lists, receive comments on your products or services, invite
+                    the client to share images or videos , promote your business events and much more, with just a scan!
+                  "
+                  openSection={openSection}
+                  setOpenSection={setOpenSection}
+                />
+                <Accordion
+                  title="How to start using QR"
+                  content="
+                    Many devices already have a built-in QR code reader. In this case, all you have to do is open the
+                    camera on your mobile phone and hold it over a code for a few seconds, until a notification appears
+                    on the screen. In case this does not happen, go to settings to check that QR scanning is enabled.
+                    If you don't have the feature, just download and install a QR code reader from your app store.
+                  "
+                  openSection={openSection}
+                  setOpenSection={setOpenSection}
+                />
+              </div>
             </div>
             <div class="w-full sm:w-2/5 w-1/2 p-6 sm:order-first ">
               <img class="w-full" src={qrl_scanner} alt="image" />
@@ -281,10 +267,7 @@ function Home() {
         </div>
       </section>
 
-
-
-
-    <section className="bg-white py-16">
+    <section className="bg-white py-16" id="pricing">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-semibold text-gray-800 mb-8 text-center">Choose Your Plan</h2>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -323,7 +306,7 @@ function Home() {
       </div>
     </section>
 
-    <section>
+    <section id="contact">
       < ContactUs />
     </section>
     </>
