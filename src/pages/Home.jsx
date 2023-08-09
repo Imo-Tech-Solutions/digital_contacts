@@ -74,14 +74,17 @@ function Home() {
 
 
     // State to track the expanded state of each collapsible item
-    const [expandedItems, setExpandedItems] = useState([]);
+    const [expandedItems, setExpandedItems] = useState([true, false, false]);
 
     // Function to toggle the expanded state of an item
     const toggleItem = (index) => {
+      console.log('Toggling item at index:', index);
       const updatedExpandedItems = [...expandedItems];
       updatedExpandedItems[index] = !updatedExpandedItems[index];
+      console.log('Updated expandedItems:', updatedExpandedItems);
       setExpandedItems(updatedExpandedItems);
     };
+
 
   const collapsItems = [
     {
@@ -280,8 +283,10 @@ function Home() {
               {" "}
             </div>
             <p
-              className="text-2x1 leading-none sm:text-2xl
-                          text-purple-header my-6"
+              className="
+              text-2x1 leading-none sm:text-2xl
+              text-purple-header my-6
+              "
             >
               In this section you will find the basic concepts and the necessary <br />
               steps to start enjoying the benefits of using QR.
@@ -299,16 +304,18 @@ function Home() {
 
 
             <div className="p-4">
-                {collapsItems.map((item, index) => (
+              {collapsItems.map((item, index) => {
+                return (
                   <CollapsibleItem
                     key={index}
                     title={item.title}
                     content={item.content}
-                    isExpanded={expandedItems[index] || false}
+                    isExpanded={expandedItems[index]}
                     onToggle={() => toggleItem(index)}
                   />
-                ))}
-              </div>
+                );
+              })}
+            </div>
 
             </div>
             <div class="w-full sm:w-2/5 w-1/2 p-6 sm:order-first ">
