@@ -2,53 +2,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import qrl_scanner from "../images/qel_scanner.png"
-import arrowIcon from "../images/icons_arrow.svg"
-import mobile from '../images/mobile_qrl.svg'
+import qrl_scanner from "../images/qel_scanner.png";
+import arrowIcon from "../images/icons_arrow.svg";
+import mobile from "../images/mobile_qrl.svg";
 import FeaturesCard from "../components/features";
 import ContactUs from "../components/ContactUs";
 
-import { useCollapse } from 'react-collapsed';
+import Accordion from "../components/Accordion";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-
-
-
-const CollapsibleItem = ({ title, content }) => {
-  const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
-
-  return (
-    <div className="border rounded-lg p-4 mb-4">
-      <button
-        className="flex items-center justify-between w-full mb-2 focus:outline-none"
-        {...getToggleProps()}
-      >
-        <span className="text-lg font-semibold">{title}</span>
-        <span className="transform transition-transform duration-200">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className={`h-5 w-5 ${isExpanded ? 'rotate-180' : 'rotate-0'}`}
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fillRule="evenodd"
-              d="M6.293 7.293a1 1 0 0 1 1.414 0L10 9.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
-            />
-          </svg>
-        </span>
-      </button>
-      <div {...getCollapseProps()} className="mt-2">
-        <div className="px-4 py-2">{content}</div>
-      </div>
-    </div>
-  );
-};
-
-
-
 
 function Home() {
   const location = useLocation();
@@ -72,89 +35,51 @@ function Home() {
     AOS.refresh();
   }, []);
 
-
-    // State to track the expanded state of each collapsible item
-    const [expandedItems, setExpandedItems] = useState([]);
-
-    // Function to toggle the expanded state of an item
-    const toggleItem = (index) => {
-      const updatedExpandedItems = [...expandedItems];
-      updatedExpandedItems[index] = !updatedExpandedItems[index];
-      setExpandedItems(updatedExpandedItems);
-    };
-
-  const collapsItems = [
-    {
-      title: 'What is a QRL code?',
-      content: `The term “QR” stands for “quick response” and refers to instant access to the information contained in
-                the Code. It is, in short, the evolution of the barcode, made up of patterns of black and white pixels.
-                Denso Wave, a Japanese subsidiary of Toyota Denso, developed them in order to mark the components of
-                their cars and thus speed up logistics in their production. Currently, it has gained great popularity,
-                due to its versatility and accessibility, thanks to the functions of smart phones.`,
-    },
-    {
-      title: 'Know the benefits of using QR',
-      content: `You will have noticed that more and more companies choose to include QR, as a fundamental resource
-                for the marketing and commercialization of their products and services. Its growing popularity is
-                due to the multiplicity of uses that you can give it: to receive payments from your clients, share
-                links to web pages, catalogs and price lists, receive comments on your products or services, invite
-                the client to share images or videos , promote your business events and much more, with just a scan!`,
-    },
-    {
-      title: 'How to start using QR',
-      content: `Many devices already have a built-in QR code reader. In this case, all you have to do is open the
-                camera on your mobile phone and hold it over a code for a few seconds, until a notification appears
-                on the screen. In case this does not happen, go to settings to check that QR scanning is enabled.
-                If you don't have the feature, just download and install a QR code reader from your app store.`,
-    },
-    // Add more items as needed
-  ];
-
-
-
+  const [openSection, setOpenSection] = useState("What is a QRL code?");
 
   const plans = [
     {
-      title: 'Free',
-      description: 'Access to basic features',
-      price: 'Free',
+      title: "Free",
+      description: "Access to basic features",
+      price: "Free",
       features: [
-        'Limited usage per month',
-        'Basic customer support',
-        'Ads-supported',
-        'Standard designs',
-        'No priority access',
+        "Limited usage per month",
+        "Basic customer support",
+        "Ads-supported",
+        "Standard designs",
+        "No priority access",
       ],
-      buttonColor: 'bg-gray-600',
+      buttonColor: "bg-gray-600",
     },
     {
-      title: 'Premium Version',
-      description: 'Access to all features',
-      price: 'Nle50.99/month',
+      title: "Premium Version",
+      description: "Access to all features",
+      price: "Nle50.99/month",
       features: [
-        'Unlimited usage',
-        'Priority customer support',
-        'Ad-free experience',
-        'Premium designs',
-        'Monthly data export',
+        "Unlimited usage",
+        "Priority customer support",
+        "Ad-free experience",
+        "Premium designs",
+        "Monthly data export",
       ],
-      buttonColor: 'bg-red-600', // Set the button background color to red
+      buttonColor: "bg-red-600", // Set the button background color to red
     },
     {
-      title: 'QRcard Premium',
-      description: 'Access to advanced features',
-      price: 'Nle80.99/month',
+      title: "QRcard Premium",
+      description: "Access to advanced features",
+      price: "Nle80.99/month",
       features: [
-        'Unlimited usage',
-        'Priority customer support',
-        'Ad-free experience',
-        'Premium designs',
-        'Unlimited data export',
+        "Unlimited usage",
+        "Priority customer support",
+        "Ad-free experience",
+        "Premium designs",
+        "Unlimited data export",
       ],
-      buttonColor: 'bg-green-600', // Set the button background color to green
+      buttonColor: "bg-green-600", // Set the button background color to green
     },
   ];
 
+  const navToPricing = "/?section=pricing";
 
   return (
     <>
@@ -162,11 +87,6 @@ function Home() {
         className="
         text-gray-800 w-full flex bg-hero-bg
         items-center justify-center"
-      //   style={{ backgroundImage: `url(${hero_background})`,
-      //             backgroundSize: 'cover',
-      //             backgroundRepeat: 'no-repeat',
-      //             backgroundPosition: 'center',
-      // }}
         id="home"
       >
         <div
@@ -202,20 +122,16 @@ function Home() {
                           items-center justify-center
                           sm:space-y-0 sm:space-x-4 lg:justify-start"
             >
-              <img
-              src={arrowIcon}
-              alt="arrow"
-              className="w-20"
-              />
-              <a
+              <img src={arrowIcon} alt="arrow" className="w-20" />
+              <Link
                 rel="get in touch"
-                href="#"
+                to={navToPricing}
                 className="px-8 py-3 text-lg font-semibold rounded
                 bg-purple text-white transform hover:scale-75
                 transition-transform duration-700"
               >
                 Order Sticker Now
-              </a>
+              </Link>
             </div>
           </div>
           <div
@@ -234,40 +150,57 @@ function Home() {
         </div>
       </section>
 
-      <section className=" my-16"
-      >
+      <section className="my-20 sm:my-16">
         <h2
           className="text-4xl text-center font-bold leading-none sm:text-3xl
           text-purple-header my-6"
+          id="features"
           data-aos="fade-right"
         >
           Features
         </h2>
-        < FeaturesCard />
+        <FeaturesCard />
       </section>
 
       <section
-      className="text-white w-full h-screen flex items-center justify-center bg-purple-light"
-      id="home"
-    >
-      <div className="bg-purple bg-opacity-70 p-12 rounded-lg shadow-xl">
-        <h2 className="text-4xl font-semibold mb-6">Why Choose Us?</h2>
-        <ul className="list-disc list-inside text-xl">
-          <li className="mb-4">⭐ React provides efficient and performant UI rendering.</li>
-          <li className="mb-4">⚡ Tailwind CSS offers a highly customizable design system.</li>
-          <li className="mb-4">🔧 React's component-based approach enhances code organization.</li>
-          <li className="mb-4">🎨 Tailwind CSS lets you create beautiful designs without writing custom CSS.</li>
-          <li className="mb-4">🌐 React allows building dynamic and interactive web applications.</li>
-          <li className="mb-4">📱 Tailwind CSS is responsive by default, perfect for mobile-friendly sites.</li>
-        </ul>
-        <p className="text-sm">Let's combine the power of React and the flexibility of Tailwind CSS to create stunning user experiences!</p>
-        <button className="mt-6 px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full shadow-lg focus:outline-none">Get Started</button>
-      </div>
-    </section>
+        className="text-white w-full h-screen flex items-center justify-center bg-purple-light"
+        id="home"
+      >
+        <div className="bg-purple bg-opacity-70 p-12 rounded-lg shadow-xl">
+          <h2 className="text-4xl font-semibold mb-6">Why Choose Us?</h2>
+          <ul className="list-disc list-inside text-xl">
+            <li className="mb-4">
+              ⭐ React provides efficient and performant UI rendering.
+            </li>
+            <li className="mb-4">
+              ⚡ Tailwind CSS offers a highly customizable design system.
+            </li>
+            <li className="mb-4">
+              🔧 React's component-based approach enhances code organization.
+            </li>
+            <li className="mb-4">
+              🎨 Tailwind CSS lets you create beautiful designs without writing
+              custom CSS.
+            </li>
+            <li className="mb-4">
+              🌐 React allows building dynamic and interactive web applications.
+            </li>
+            <li className="mb-4">
+              📱 Tailwind CSS is responsive by default, perfect for
+              mobile-friendly sites.
+            </li>
+          </ul>
+          <p className="text-sm">
+            Let's combine the power of React and the flexibility of Tailwind CSS
+            to create stunning user experiences!
+          </p>
+          <button className="mt-6 px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full shadow-lg focus:outline-none">
+            Get Started
+          </button>
+        </div>
+      </section>
 
-
-
-    <section class="bg-gray-100 border-b py-8 mt-16" id="everything">
+      <section class="bg-gray-100 border-b py-8" id="everything">
         <div class="container max-w-5xl mx-auto m-8">
           <div className="text-center py-2 flex flex-col items-center justify-center">
             <p
@@ -280,10 +213,13 @@ function Home() {
               {" "}
             </div>
             <p
-              className="text-2x1 leading-none sm:text-2xl
-                          text-purple-header my-6"
+              className="
+              text-2x1 leading-none sm:text-2xl
+              text-purple-header my-6
+              "
             >
-              In this section you will find the basic concepts and the necessary <br />
+              In this section you will find the basic concepts and the necessary{" "}
+              <br />
               steps to start enjoying the benefits of using QR.
             </p>
           </div>
@@ -296,20 +232,43 @@ function Home() {
             data-aos="fade-up"
           >
             <div class="w-full sm:w-1/2 p-6">
-
-
-            <div className="p-4">
-                {collapsItems.map((item, index) => (
-                  <CollapsibleItem
-                    key={index}
-                    title={item.title}
-                    content={item.content}
-                    isExpanded={expandedItems[index] || false}
-                    onToggle={() => toggleItem(index)}
-                  />
-                ))}
+              <div className="p-4">
+                <Accordion
+                  title="What is a QRL code?"
+                  content="
+                    The term “QR” stands for “quick response” and refers to instant access to the information contained in
+                    the Code. It is, in short, the evolution of the barcode, made up of patterns of black and white pixels.
+                    Denso Wave, a Japanese subsidiary of Toyota Denso, developed them in order to mark the components of
+                    their cars and thus speed up logistics in their production. Currently, it has gained great popularity,
+                    due to its versatility and accessibility, thanks to the functions of smart phones.
+                  "
+                  openSection={openSection}
+                  setOpenSection={setOpenSection}
+                />
+                <Accordion
+                  title="Know the benefits of using QR"
+                  content="
+                    You will have noticed that more and more companies choose to include QR, as a fundamental resource
+                    for the marketing and commercialization of their products and services. Its growing popularity is
+                    due to the multiplicity of uses that you can give it: to receive payments from your clients, share
+                    links to web pages, catalogs and price lists, receive comments on your products or services, invite
+                    the client to share images or videos , promote your business events and much more, with just a scan!
+                  "
+                  openSection={openSection}
+                  setOpenSection={setOpenSection}
+                />
+                <Accordion
+                  title="How to start using QR"
+                  content="
+                    Many devices already have a built-in QR code reader. In this case, all you have to do is open the
+                    camera on your mobile phone and hold it over a code for a few seconds, until a notification appears
+                    on the screen. In case this does not happen, go to settings to check that QR scanning is enabled.
+                    If you don't have the feature, just download and install a QR code reader from your app store.
+                  "
+                  openSection={openSection}
+                  setOpenSection={setOpenSection}
+                />
               </div>
-
             </div>
             <div class="w-full sm:w-2/5 w-1/2 p-6 sm:order-first ">
               <img class="w-full" src={qrl_scanner} alt="image" />
@@ -318,51 +277,56 @@ function Home() {
         </div>
       </section>
 
-
-
-
-    <section className="bg-white py-16">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-semibold text-gray-800 mb-8 text-center">Choose Your Plan</h2>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-          {plans.map((plan, index) => (
-            <div key={index} className="bg-white rounded-lg p-8 shadow-md">
-              <h3 className="text-xl font-semibold mb-4 text-center">{plan.title}</h3>
-              <p className="text-gray-600 mb-6 text-center">{plan.description}</p>
-              <p className="text-3xl font-semibold mb-6 text-center">{plan.price}</p>
-              <ul className="text-sm text-gray-600">
-                {plan.features.map((feature, index) => (
-                  <li key={index} className="flex items-center mb-3">
-                    <svg
-                      className="w-4 h-4 mr-2 text-green-600"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M3 10a7 7 0 1114 0 7 7 0 01-14 0zm6.293 2.293a1 1 0 011.414 0L12 13.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-2-2a1 1 0 010-1.414z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-              <button
-                className={`w-full text-white rounded-md py-3 px-6 font-semibold hover:opacity-90 focus:outline-none ${plan.buttonColor}`}
-              >
-                Get Started
-              </button>
-            </div>
-          ))}
+      <section className="bg-white py-16" id="pricing">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-semibold text-gray-800 mb-8 text-center">
+            Choose Your Plan
+          </h2>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+            {plans.map((plan, index) => (
+              <div key={index} className="bg-white rounded-lg p-8 shadow-md">
+                <h3 className="text-xl font-semibold mb-4 text-center">
+                  {plan.title}
+                </h3>
+                <p className="text-gray-600 mb-6 text-center">
+                  {plan.description}
+                </p>
+                <p className="text-3xl font-semibold mb-6 text-center">
+                  {plan.price}
+                </p>
+                <ul className="text-sm text-gray-600">
+                  {plan.features.map((feature, index) => (
+                    <li key={index} className="flex items-center mb-3">
+                      <svg
+                        className="w-4 h-4 mr-2 text-green-600"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M3 10a7 7 0 1114 0 7 7 0 01-14 0zm6.293 2.293a1 1 0 011.414 0L12 13.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-2-2a1 1 0 010-1.414z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+                <button
+                  className={`w-full text-white rounded-md py-3 px-6 font-semibold hover:opacity-90 focus:outline-none ${plan.buttonColor}`}
+                >
+                  Get Started
+                </button>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section>
-      < ContactUs />
-    </section>
+      <section id="contact">
+        <ContactUs />
+      </section>
     </>
   );
 }
