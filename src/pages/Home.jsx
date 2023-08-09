@@ -2,9 +2,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import qrl_scanner from "../images/qel_scanner.png"
-import arrowIcon from "../images/icons_arrow.svg"
-import mobile from '../images/mobile_qrl.svg'
+import qrl_scanner from "../images/qel_scanner.png";
+import arrowIcon from "../images/icons_arrow.svg";
+import mobile from "../images/mobile_qrl.svg";
 import FeaturesCard from "../components/features";
 import ContactUs from "../components/ContactUs";
 
@@ -12,10 +12,6 @@ import Accordion from "../components/Accordion";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-
-
-
 
 function Home() {
   const location = useLocation();
@@ -39,52 +35,51 @@ function Home() {
     AOS.refresh();
   }, []);
 
-  const [openSection, setOpenSection] = useState('What is a QRL code?');
+  const [openSection, setOpenSection] = useState("What is a QRL code?");
 
   const plans = [
     {
-      title: 'Free',
-      description: 'Access to basic features',
-      price: 'Free',
+      title: "Free",
+      description: "Access to basic features",
+      price: "Free",
       features: [
-        'Limited usage per month',
-        'Basic customer support',
-        'Ads-supported',
-        'Standard designs',
-        'No priority access',
+        "Limited usage per month",
+        "Basic customer support",
+        "Ads-supported",
+        "Standard designs",
+        "No priority access",
       ],
-      buttonColor: 'bg-gray-600',
+      buttonColor: "bg-gray-600",
     },
     {
-      title: 'Premium Version',
-      description: 'Access to all features',
-      price: 'Nle50.99/month',
+      title: "Premium Version",
+      description: "Access to all features",
+      price: "Nle50.99/month",
       features: [
-        'Unlimited usage',
-        'Priority customer support',
-        'Ad-free experience',
-        'Premium designs',
-        'Monthly data export',
+        "Unlimited usage",
+        "Priority customer support",
+        "Ad-free experience",
+        "Premium designs",
+        "Monthly data export",
       ],
-      buttonColor: 'bg-red-600', // Set the button background color to red
+      buttonColor: "bg-red-600", // Set the button background color to red
     },
     {
-      title: 'QRcard Premium',
-      description: 'Access to advanced features',
-      price: 'Nle80.99/month',
+      title: "QRcard Premium",
+      description: "Access to advanced features",
+      price: "Nle80.99/month",
       features: [
-        'Unlimited usage',
-        'Priority customer support',
-        'Ad-free experience',
-        'Premium designs',
-        'Unlimited data export',
+        "Unlimited usage",
+        "Priority customer support",
+        "Ad-free experience",
+        "Premium designs",
+        "Unlimited data export",
       ],
-      buttonColor: 'bg-green-600', // Set the button background color to green
+      buttonColor: "bg-green-600", // Set the button background color to green
     },
   ];
 
-  const navToPricing = "/?section=pricing"
-
+  const navToPricing = "/?section=pricing";
 
   return (
     <>
@@ -127,11 +122,7 @@ function Home() {
                           items-center justify-center
                           sm:space-y-0 sm:space-x-4 lg:justify-start"
             >
-              <img
-              src={arrowIcon}
-              alt="arrow"
-              className="w-20"
-              />
+              <img src={arrowIcon} alt="arrow" className="w-20" />
               <Link
                 rel="get in touch"
                 to={navToPricing}
@@ -159,8 +150,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="my-20 sm:my-16"
-      >
+      <section className="my-20 sm:my-16">
         <h2
           className="text-4xl text-center font-bold leading-none sm:text-3xl
           text-purple-header my-6"
@@ -169,29 +159,48 @@ function Home() {
         >
           Features
         </h2>
-        < FeaturesCard />
+        <FeaturesCard />
       </section>
 
       <section
-      className="text-white w-full h-screen flex items-center justify-center bg-purple-light my-16"
-      id="home"
-    >
-      <div className="bg-purple bg-opacity-70 p-12 rounded-lg shadow-xl">
-        <h2 className="text-4xl font-semibold mb-6">Why Choose Us?</h2>
-        <ul className="list-disc list-inside text-xl">
-          <li className="mb-4">⭐ React provides efficient and performant UI rendering.</li>
-          <li className="mb-4">⚡ Tailwind CSS offers a highly customizable design system.</li>
-          <li className="mb-4">🔧 React's component-based approach enhances code organization.</li>
-          <li className="mb-4">🎨 Tailwind CSS lets you create beautiful designs without writing custom CSS.</li>
-          <li className="mb-4">🌐 React allows building dynamic and interactive web applications.</li>
-          <li className="mb-4">📱 Tailwind CSS is responsive by default, perfect for mobile-friendly sites.</li>
-        </ul>
-        <p className="text-sm">Let's combine the power of React and the flexibility of Tailwind CSS to create stunning user experiences!</p>
-        <button className="mt-6 px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full shadow-lg focus:outline-none">Get Started</button>
-      </div>
-    </section>
+        className="text-white w-full h-screen flex items-center justify-center bg-purple-light"
+        id="home"
+      >
+        <div className="bg-purple bg-opacity-70 p-12 rounded-lg shadow-xl">
+          <h2 className="text-4xl font-semibold mb-6">Why Choose Us?</h2>
+          <ul className="list-disc list-inside text-xl">
+            <li className="mb-4">
+              ⭐ React provides efficient and performant UI rendering.
+            </li>
+            <li className="mb-4">
+              ⚡ Tailwind CSS offers a highly customizable design system.
+            </li>
+            <li className="mb-4">
+              🔧 React's component-based approach enhances code organization.
+            </li>
+            <li className="mb-4">
+              🎨 Tailwind CSS lets you create beautiful designs without writing
+              custom CSS.
+            </li>
+            <li className="mb-4">
+              🌐 React allows building dynamic and interactive web applications.
+            </li>
+            <li className="mb-4">
+              📱 Tailwind CSS is responsive by default, perfect for
+              mobile-friendly sites.
+            </li>
+          </ul>
+          <p className="text-sm">
+            Let's combine the power of React and the flexibility of Tailwind CSS
+            to create stunning user experiences!
+          </p>
+          <button className="mt-6 px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full shadow-lg focus:outline-none">
+            Get Started
+          </button>
+        </div>
+      </section>
 
-    <section class="bg-gray-100 border-b py-8 mt-16" id="everything">
+      <section class="bg-gray-100 border-b py-8" id="everything">
         <div class="container max-w-5xl mx-auto m-8">
           <div className="text-center py-2 flex flex-col items-center justify-center">
             <p
@@ -209,7 +218,8 @@ function Home() {
               text-purple-header my-6
               "
             >
-              In this section you will find the basic concepts and the necessary <br />
+              In this section you will find the basic concepts and the necessary{" "}
+              <br />
               steps to start enjoying the benefits of using QR.
             </p>
           </div>
@@ -267,48 +277,56 @@ function Home() {
         </div>
       </section>
 
-    <section className="bg-white py-16" id="pricing">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-semibold text-gray-800 mb-8 text-center">Choose Your Plan</h2>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-          {plans.map((plan, index) => (
-            <div key={index} className="bg-white rounded-lg p-8 shadow-md">
-              <h3 className="text-xl font-semibold mb-4 text-center">{plan.title}</h3>
-              <p className="text-gray-600 mb-6 text-center">{plan.description}</p>
-              <p className="text-3xl font-semibold mb-6 text-center">{plan.price}</p>
-              <ul className="text-sm text-gray-600">
-                {plan.features.map((feature, index) => (
-                  <li key={index} className="flex items-center mb-3">
-                    <svg
-                      className="w-4 h-4 mr-2 text-green-600"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M3 10a7 7 0 1114 0 7 7 0 01-14 0zm6.293 2.293a1 1 0 011.414 0L12 13.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-2-2a1 1 0 010-1.414z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-              <button
-                className={`w-full text-white rounded-md py-3 px-6 font-semibold hover:opacity-90 focus:outline-none ${plan.buttonColor}`}
-              >
-                Get Started
-              </button>
-            </div>
-          ))}
+      <section className="bg-white py-16" id="pricing">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-semibold text-gray-800 mb-8 text-center">
+            Choose Your Plan
+          </h2>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+            {plans.map((plan, index) => (
+              <div key={index} className="bg-white rounded-lg p-8 shadow-md">
+                <h3 className="text-xl font-semibold mb-4 text-center">
+                  {plan.title}
+                </h3>
+                <p className="text-gray-600 mb-6 text-center">
+                  {plan.description}
+                </p>
+                <p className="text-3xl font-semibold mb-6 text-center">
+                  {plan.price}
+                </p>
+                <ul className="text-sm text-gray-600">
+                  {plan.features.map((feature, index) => (
+                    <li key={index} className="flex items-center mb-3">
+                      <svg
+                        className="w-4 h-4 mr-2 text-green-600"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M3 10a7 7 0 1114 0 7 7 0 01-14 0zm6.293 2.293a1 1 0 011.414 0L12 13.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-2-2a1 1 0 010-1.414z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+                <button
+                  className={`w-full text-white rounded-md py-3 px-6 font-semibold hover:opacity-90 focus:outline-none ${plan.buttonColor}`}
+                >
+                  Get Started
+                </button>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact">
-      < ContactUs />
-    </section>
+      <section id="contact">
+        <ContactUs />
+      </section>
     </>
   );
 }
