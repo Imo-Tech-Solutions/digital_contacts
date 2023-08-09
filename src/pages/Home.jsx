@@ -8,44 +8,11 @@ import mobile from '../images/mobile_qrl.svg'
 import FeaturesCard from "../components/features";
 import ContactUs from "../components/ContactUs";
 
-import { useCollapse } from 'react-collapsed';
+import Accordion from "../components/Accordion";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
-
-
-const CollapsibleItem = ({ title, content }) => {
-  const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
-
-  return (
-    <div className="border rounded-lg p-4 mb-4">
-      <button
-        className="flex items-center justify-between w-full mb-2 focus:outline-none"
-        {...getToggleProps()}
-      >
-        <span className="text-lg font-semibold">{title}</span>
-        <span className="transform transition-transform duration-200">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className={`h-5 w-5 ${isExpanded ? 'rotate-180' : 'rotate-0'}`}
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fillRule="evenodd"
-              d="M6.293 7.293a1 1 0 0 1 1.414 0L10 9.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
-            />
-          </svg>
-        </span>
-      </button>
-      <div {...getCollapseProps()} className="mt-2">
-        <div className="px-4 py-2">{content}</div>
-      </div>
-    </div>
-  );
-};
 
 
 
@@ -72,49 +39,7 @@ function Home() {
     AOS.refresh();
   }, []);
 
-
-    // State to track the expanded state of each collapsible item
-    const [expandedItems, setExpandedItems] = useState([true, false, false]);
-
-    // Function to toggle the expanded state of an item
-    const toggleItem = (index) => {
-      console.log('Toggling item at index:', index);
-      const updatedExpandedItems = [...expandedItems];
-      updatedExpandedItems[index] = !updatedExpandedItems[index];
-      console.log('Updated expandedItems:', updatedExpandedItems);
-      setExpandedItems(updatedExpandedItems);
-    };
-
-
-  const collapsItems = [
-    {
-      title: 'What is a QRL code?',
-      content: `The term “QR” stands for “quick response” and refers to instant access to the information contained in
-                the Code. It is, in short, the evolution of the barcode, made up of patterns of black and white pixels.
-                Denso Wave, a Japanese subsidiary of Toyota Denso, developed them in order to mark the components of
-                their cars and thus speed up logistics in their production. Currently, it has gained great popularity,
-                due to its versatility and accessibility, thanks to the functions of smart phones.`,
-    },
-    {
-      title: 'Know the benefits of using QR',
-      content: `You will have noticed that more and more companies choose to include QR, as a fundamental resource
-                for the marketing and commercialization of their products and services. Its growing popularity is
-                due to the multiplicity of uses that you can give it: to receive payments from your clients, share
-                links to web pages, catalogs and price lists, receive comments on your products or services, invite
-                the client to share images or videos , promote your business events and much more, with just a scan!`,
-    },
-    {
-      title: 'How to start using QR',
-      content: `Many devices already have a built-in QR code reader. In this case, all you have to do is open the
-                camera on your mobile phone and hold it over a code for a few seconds, until a notification appears
-                on the screen. In case this does not happen, go to settings to check that QR scanning is enabled.
-                If you don't have the feature, just download and install a QR code reader from your app store.`,
-    },
-    // Add more items as needed
-  ];
-
-
-
+  const [openSection, setOpenSection] = useState('What is a QRL code?');
 
   const plans = [
     {
@@ -304,17 +229,48 @@ function Home() {
 
 
             <div className="p-4">
-              {collapsItems.map((item, index) => {
-                return (
-                  <CollapsibleItem
-                    key={index}
-                    title={item.title}
-                    content={item.content}
-                    isExpanded={expandedItems[index]}
-                    onToggle={() => toggleItem(index)}
-                  />
-                );
-              })}
+
+
+
+            <Accordion
+              title="What is a QRL code?"
+              content="
+                The term “QR” stands for “quick response” and refers to instant access to the information contained in
+                the Code. It is, in short, the evolution of the barcode, made up of patterns of black and white pixels.
+                Denso Wave, a Japanese subsidiary of Toyota Denso, developed them in order to mark the components of
+                their cars and thus speed up logistics in their production. Currently, it has gained great popularity,
+                due to its versatility and accessibility, thanks to the functions of smart phones.
+              "
+              openSection={openSection}
+              setOpenSection={setOpenSection}
+            />
+            <Accordion
+              title="Know the benefits of using QR"
+              content="
+                You will have noticed that more and more companies choose to include QR, as a fundamental resource
+                for the marketing and commercialization of their products and services. Its growing popularity is
+                due to the multiplicity of uses that you can give it: to receive payments from your clients, share
+                links to web pages, catalogs and price lists, receive comments on your products or services, invite
+                the client to share images or videos , promote your business events and much more, with just a scan!
+              "
+              openSection={openSection}
+              setOpenSection={setOpenSection}
+            />
+            <Accordion
+              title="How to start using QR"
+              content="
+                Many devices already have a built-in QR code reader. In this case, all you have to do is open the
+                camera on your mobile phone and hold it over a code for a few seconds, until a notification appears
+                on the screen. In case this does not happen, go to settings to check that QR scanning is enabled.
+                If you don't have the feature, just download and install a QR code reader from your app store.
+
+              "
+              openSection={openSection}
+              setOpenSection={setOpenSection}
+            />
+
+
+
             </div>
 
             </div>
