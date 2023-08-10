@@ -163,7 +163,7 @@ function Home() {
       </section>
 
       <section
-        className="text-white w-full h-screen flex items-center justify-center bg-purple-light"
+        className="text-white w-full sm:h-screen flex items-center justify-center bg-purple-light"
         id="home"
       >
         <div className="bg-purple bg-opacity-70 p-12 rounded-lg shadow-xl">
