@@ -34,7 +34,7 @@ const Card = ({ icon, heading, description }) => {
 
   return (
     <div
-      className="w-auto sm:w-96 h-64 max-w-md p-6
+      className="w-auto sm:w-96  max-w-md px-6 py-10
       rounded-lg  bg-white
       border-2 hover:border-purple
       cursor-pointer transition duration-300 ease-in-out"
