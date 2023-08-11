@@ -291,7 +291,7 @@ function Home() {
                 <p className="text-gray-600 mb-6 text-center">
                   {plan.description}
                 </p>
-                <p className="sm:text-2xl text-3xl  font-semibold mb-6 text-center px-2 bg-red-600">
+                <p className="sm:text-2xl text-3xl  font-semibold mb-6 text-center">
                   {plan.price}
                 </p>
                 <ul className="text-sm text-gray-600">
