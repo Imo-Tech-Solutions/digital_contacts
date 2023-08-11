@@ -282,6 +282,7 @@ function Home() {
           <h2 className="text-4xl font-semibold text-gray-800 mb-8 text-center">
             Choose Your Plan
           </h2>
+
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {plans.map((plan, index) => (
               <div key={index} className="bg-white rounded-lg p-8 sm:p-8 shadow-md">
