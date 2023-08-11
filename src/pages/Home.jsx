@@ -284,7 +284,7 @@ function Home() {
           </h2>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {plans.map((plan, index) => (
-              <div key={index} className="bg-white rounded-lg p-8 shadow-md">
+              <div key={index} className="bg-white rounded-lg p-8 sm:p-8 shadow-md">
                 <h3 className="text-xl font-semibold mb-4 text-center">
                   {plan.title}
                 </h3>
