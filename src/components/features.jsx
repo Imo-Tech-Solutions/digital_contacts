@@ -37,7 +37,7 @@ const Card = ({ icon, heading, description }) => {
       className="w-auto sm:w-96  max-w-md px-6 py-10
       rounded-lg  bg-white
       border-2 hover:border-purple
-      cursor-pointer transition duration-300 ease-in-out"
+      transition duration-300 ease-in-out"
       data-aos="fade-up"
     >
       <div className="flex items-center mb-4">
