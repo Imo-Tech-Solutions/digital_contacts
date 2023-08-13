@@ -269,7 +269,7 @@ function Home() {
                 />
               </div>
             </div>
-            <div class="w-full sm:w-2/5 w-1/2 p-6 sm:order-first ">
+            <div class="sm:w-2/5 w-1/2 p-6 sm:order-first ">
               <img class="w-full" src={qrl_scanner} alt="image" />
             </div>
           </div>
