@@ -18,7 +18,6 @@ function Home() {
   useEffect(() => {
     const searchParams = new URLSearchParams(location.search);
     const sectionId = searchParams.get("section");
-
     if (sectionId) {
       const targetElement = document.getElementById(sectionId);
       if (targetElement) {
