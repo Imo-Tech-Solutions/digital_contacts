@@ -2,6 +2,7 @@ import React from 'react';
 import createIcon from '../images/create_icon.svg';
 import shareIcon from '../images/share_icon.svg'
 import backupIcon from '../images/backup_icon.svg'
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
