@@ -28,6 +28,7 @@ const cardData = [
 ];
 
 const Card = ({ icon, heading, description }) => {
+  
   // Initialize AOS library
   React.useEffect(() => {
     AOS.init();
