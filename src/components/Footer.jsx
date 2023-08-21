@@ -48,9 +48,8 @@ function Footer() {
             </div>
           </div>
         </div>
-
         <hr className="border-gray-600 my-6" />
-        
+
         <div className="text-center text-gray-500 text-sm">
           &copy; {new Date().getFullYear()} IMO-Technology. All rights reserved.
           ~ Design By <span className='hover:text-gray-800'> <a href='#'
