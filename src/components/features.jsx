@@ -12,25 +12,21 @@ const cardData = [
     id: 1,
     icon: phoneCase,
     heading: `Phone case SLE 300`,
-    description: `Choose a card design, change colors and fonts as you desire.`,
   },
   {
     id: 2,
     icon: keyHolder,
     heading: `Key hanger Coming Soon`,
-    description: `Exchange your cards easily with NFC, Bluetooth or WiFi. Send your cards to people.`,
   },
   {
     id: 3,
     icon: business,
     heading: `Business Plaques SLE 1,000`,
-    description: `Back up your cards to your own Google Drive account and do not risk losing them.`,
   },
   {
     id: 3,
     icon: qrl,
     heading: `QRCard SLE 250`,
-    description: `Back up your cards to your own Google Drive account and do not risk losing them.`,
   },
 ];
 
@@ -43,15 +39,17 @@ const Card = ({ icon, heading, description }) => {
 
   return (
     <div
-      className="w-auto sm:w-96  max-w-md px-6 py-10
+      className="w-auto sm:w-96  max-w-md px-6 py-6
       rounded-lg  bg-white
-      border-2 hover:border-purple
-      transition duration-300 ease-in-out"
+      border-2"
       data-aos="fade-up"
     >
       <div className="flex items-center justify-center mb-4">
         <div className="mr-3">
-          <img className="w-56 h-56" src={icon} alt="Icon" />
+          <img className="w-56 h-56 transition-transform
+          duration-700
+          transform-gpu hover:scale-110"
+          src={icon} alt="Icon" />
         </div>
       </div>
       <h2 className="text-lg font-semibold">{heading}</h2>
