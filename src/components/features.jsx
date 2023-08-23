@@ -1,7 +1,8 @@
 import React from 'react';
-import createIcon from '../images/create_icon.svg';
-import shareIcon from '../images/share_icon.svg'
-import backupIcon from '../images/backup_icon.svg'
+import phoneCase from '../images/phone_case.png';
+import keyHolder from '../images/key_handle.png'
+import business from "../images/business _plaques.png";
+import qrl from '../images/qrl_scan2.png'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -9,19 +10,25 @@ import 'aos/dist/aos.css';
 const cardData = [
   {
     id: 1,
-    icon: createIcon,
+    icon: phoneCase,
     heading: `Create Your Digital Business Card`,
     description: `Choose a card design, change colors and fonts as you desire.`,
   },
   {
     id: 2,
-    icon: shareIcon,
+    icon: keyHolder,
     heading: `Share Contacts`,
     description: `Exchange your cards easily with NFC, Bluetooth or WiFi. Send your cards to people.`,
   },
   {
     id: 3,
-    icon: backupIcon,
+    icon: business,
+    heading: `Backup`,
+    description: `Back up your cards to your own Google Drive account and do not risk losing them.`,
+  },
+  {
+    id: 3,
+    icon: qrl,
     heading: `Backup`,
     description: `Back up your cards to your own Google Drive account and do not risk losing them.`,
   },
