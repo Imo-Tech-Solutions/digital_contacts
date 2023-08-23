@@ -153,7 +153,7 @@ function Home() {
           id="features"
           data-aos="fade-right"
         >
-          Features
+          Products
         </h2>
         <FeaturesCard />
       </section>
