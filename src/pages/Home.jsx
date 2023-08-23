@@ -276,7 +276,7 @@ function Home() {
       <section className="bg-white py-16" id="pricing">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-semibold text-gray-800 mb-8 text-center">
-            Choose Your Plan
+            Our packages
           </h2>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
