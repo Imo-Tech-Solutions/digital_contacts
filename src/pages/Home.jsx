@@ -103,8 +103,8 @@ function Home() {
           >
             <h1 className="text-4xl font-bold leading-none sm:text-5xl text-purple-header">
               Create and share your<br />
-              <span className="text-purple"> business cards </span>
-              with only one app.
+              <span className="text-purple"> virtual business card  </span>
+              with anyone, anywhere with IMO’s DigiCards!
             </h1>
             <p className="mt-6 mb-8 text-lg sm:mb-12 text-purple-body text-justify">
               DigiCard is an eco-friendly business card application which can be
