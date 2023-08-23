@@ -28,7 +28,7 @@ const cardData = [
 ];
 
 const Card = ({ icon, heading, description }) => {
-  
+
   // Initialize AOS library
   React.useEffect(() => {
     AOS.init();
@@ -42,9 +42,9 @@ const Card = ({ icon, heading, description }) => {
       transition duration-300 ease-in-out"
       data-aos="fade-up"
     >
-      <div className="flex items-center mb-4">
+      <div className="flex items-center justify-center mb-4 bg-red-500">
         <div className="mr-3">
-          <img className="w-10 h-10" src={icon} alt="Icon" />
+          <img className="w-20 h-20" src={icon} alt="Icon" />
         </div>
       </div>
       <h2 className="text-lg font-semibold">{heading}</h2>
@@ -62,7 +62,7 @@ const FeaturesCard = () => {
           <Card
             icon={card.icon}
             heading={card.heading}
-            description={card.description}
+            // description={card.description}
           />
         </div>
       ))}
