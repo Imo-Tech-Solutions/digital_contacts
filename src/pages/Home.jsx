@@ -38,41 +38,34 @@ function Home() {
 
   const plans = [
     {
-      title: "Free",
-      description: "Access to basic features",
-      price: "Free",
+      title: "For Businesses",
+      description: "Register up to 20 employees",
+      price: "SLE 10,000",
       features: [
-        "Limited usage per month",
-        "Basic customer support",
-        "Ads-supported",
-        "Standard designs",
-        "No priority access",
+        "QRCards",
+        "B1 Business plaque (tabletop)",
       ],
       buttonColor: "bg-gray-600",
     },
     {
-      title: "Premium Version",
-      description: "Access to all features",
-      price: "Nle50.99/month",
+      title: "For Businesses",
+      description: "Register up to 50 employees",
+      price: "SLE 25,000",
       features: [
-        "Unlimited usage",
-        "Priority customer support",
-        "Ad-free experience",
-        "Premium designs",
-        "Monthly data export",
+        "QRCards",
+        "Phone Cases",
+        "Landing Page ",
       ],
       buttonColor: "bg-red-600", // Set the button background color to red
     },
     {
-      title: "QRcard Premium",
-      description: "Access to advanced features",
-      price: "Nle80.99/month",
+      title: "For individuals:",
+      description: "Registration",
+      price: "SLE 750 ",
       features: [
-        "Unlimited usage",
-        "Priority customer support",
-        "Ad-free experience",
-        "Premium designs",
-        "Unlimited data export",
+        "Registration",
+        "QRCard",
+        "Phone case",
       ],
       buttonColor: "bg-green-600", // Set the button background color to green
     },
