@@ -107,13 +107,7 @@ function Home() {
               with anyone, anywhere with IMO’s DigiCards!
             </h1>
             <p className="mt-6 mb-8 text-lg sm:mb-12 text-purple-body text-justify">
-              DigiCard is an eco-friendly business card application which can be
-              used on phones and tablets. It can scan your printed business
-              cards and save personal information automatically. Therefore, you
-              can get rid of keeping your cards and recycle them. Without
-              printing, you can share digital cards which you design on your
-              phone or tablet. You can make calls, send messages or e-mails and
-              take directions to addresses using cards you saved.{" "}
+            Go contactless and stay eco-friendly with our digital business cards. Instead of printing 200 cards, you only need one QR code containing all your contact details that can be scanned and your information is automatically saved in the phone. Are you excited yet? Well, don’t waste any more time. Take a look at our products!{" "}
               <span className="text-blue-500"></span>
             </p>
             <div
