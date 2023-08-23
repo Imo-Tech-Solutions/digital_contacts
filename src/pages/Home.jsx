@@ -102,7 +102,7 @@ function Home() {
             lg:max-w-xl xl:max-w-2xl lg:text-left"
           >
             <h1 className="text-4xl font-bold leading-none sm:text-5xl text-purple-header">
-              Scan, create and share <br />
+              Create and share your<br />
               <span className="text-purple"> business cards </span>
               with only one app.
             </h1>
