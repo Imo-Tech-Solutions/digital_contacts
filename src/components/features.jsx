@@ -46,12 +46,10 @@ const Card = ({ icon, heading, description }) => {
     >
       <div className="flex items-center justify-center
                       mb-4 w-full h-full">
-        <div className="mr-3 w-full h-full">
           <img className="w-full h-56 transition-transform
           duration-700 rounded-md
           transform-gpu hover:scale-105"
           src={icon} alt="Icon" />
-        </div>
       </div>
       <h2 className="text-lg font-semibold">{heading}</h2>
       <br />
