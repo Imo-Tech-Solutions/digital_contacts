@@ -8,6 +8,7 @@ import mobile from "../images/mobile_qrl.svg";
 import FeaturesCard from "../components/features";
 import ContactUs from "../components/ContactUs";
 import woman_with_phone from '../images/woman_with_phone.jpg'
+import woman_with_phone2 from '../images/woman_with_phone2.jpg'
 
 import Accordion from "../components/Accordion";
 
@@ -141,7 +142,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="my-20 sm:my-16">
+      <section className="my-20 sm:my-16 border-b ">
         <h2
           className="text-4xl text-center font-bold leading-none sm:text-3xl
           text-purple-header my-6"
@@ -158,7 +159,7 @@ function Home() {
 
 
 
-      <section class="bg-white border-b py-8" id="everything">
+      <section class="bg-white border-b py-8" id="">
         <div class="max-w-fit w-4/5 mx-auto m-8">
           <div className="text-center py-2 flex flex-col items-center justify-center">
             <p
@@ -179,7 +180,7 @@ function Home() {
             data-aos="fade-up"
           >
             <div class="w-full sm:w-1/2 p-6">
-              <div className="p-4">
+              <div className="text-gray-600">
 
                 <p
               className="
@@ -204,19 +205,14 @@ function Home() {
 
               </div>
             </div>
-            <div class="sm:w-2/5 w-1/2 p-6 sm:order-first ">
+            <div class="sm:w-2/4 w-full p-6 sm:order-first ">
               <img class="w-full" src={woman_with_phone} alt="image" />
             </div>
           </div>
 
-
-
-
-
-
           <div class="flex flex-wrap flex-col-reverse sm:flex-row justify-center bg-gray-100 border-b items-center" data-aos="fade-up">
             <div class="w-full sm:w-1/2 p-6">
-                <div class="p-4">
+                <div class="text-gray-600">
                     <p class="text-2xl leading-none sm:text-2xl text-purple-header my-6">
                         Benefits for Individuals:
                     </p>
@@ -235,8 +231,8 @@ function Home() {
                       Professional Impression: Embracing digital technology showcases your adaptability and modern approach to networking, leaving a positive impression on tech-savvy colleagues and partners.
                 </div>
             </div>
-            <div class="sm:w-2/5 w-1/2 p-6 sm:order-last">
-                <img class="w-full" src={woman_with_phone} alt="image" />
+            <div class="sm:w-2/4 w-full p-6 sm:order-last">
+                <img class="w-full" src={woman_with_phone2} alt="image" />
             </div>
           </div>
         </div>
