@@ -218,10 +218,10 @@ function Home() {
                 identity. <br />
 
 
-                < span className="text-gray-700 font-bold">Instant Updates: </span>
-                Company information can change over time. Digital cards allow you to update contact
-                details, promotions, or other information in real-time, ensuring recipients always have the most
-                accurate information.
+                < span className="text-gray-700 font-bold">✅ Instant Updates: </span>
+                  Company information can change over time. Digital cards allow you to update contact
+                  details, promotions, or other information in real-time, ensuring recipients always have the most
+                  accurate information.
 
               </div>
             </div>
