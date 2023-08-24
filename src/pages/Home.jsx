@@ -236,19 +236,29 @@ function Home() {
                     <p class="text-2xl leading-none sm:text-2xl text-purple-header my-6">
                         Benefits for Individuals:
                     </p>
-                      Convenience: People often misplace or run out of traditional business cards. With a digital card stored on their smartphones, contacts are always just a click away.
+                      Convenience: People often misplace or run out of traditional business cards. With a digital
+                      card stored on their smartphones, contacts are always just a click away. <br/>
 
-                      Reduced Clutter: Traditional business cards can accumulate and clutter wallets or desk drawers. Digital cards eliminate this physical clutter, providing a cleaner and more organized approach.
+                      Reduced Clutter: Traditional business cards can accumulate and clutter wallets or desk drawers.
+                      Digital cards eliminate this physical clutter, providing a cleaner and more organized approach. <br />
 
-                      Easy Sharing: Sharing contact information is seamless – recipients can scan the QR code with their smartphone's camera to instantly save your details, eliminating the need for manual data entry.
+                      Easy Sharing: Sharing contact information is seamless – recipients can scan the QR code with
+                      their smartphone's camera to instantly save your details, eliminating the need for manual
+                      data entry. <br />
 
-                      Versatility: Digital cards can be shared across various platforms, including email, messaging apps, and social media. This flexibility makes it easier to connect in the recipient's preferred way.
+                      Versatility: Digital cards can be shared across various platforms, including email, messaging
+                      apps, and social media. This flexibility makes it easier to connect in the recipient's
+                      preferred way. <br />
 
-                      Interactive Elements: Digital cards can include interactive features like clickable links to portfolios, LinkedIn profiles, or product pages, allowing recipients to engage with your content directly.
+                      Interactive Elements: Digital cards can include interactive features like clickable links to
+                      portfolios, LinkedIn profiles, or product pages, allowing recipients to engage with your
+                      content directly. <br/>
 
-                      Always Up-to-Date: When your information changes, there's no need to print new cards. Digital cards can be updated instantly, ensuring your contacts always have accurate details.
+                      Always Up-to-Date: When your information changes, there's no need to print new cards. Digital
+                      cards can be updated instantly, ensuring your contacts always have accurate details. <br/>
 
-                      Professional Impression: Embracing digital technology showcases your adaptability and modern approach to networking, leaving a positive impression on tech-savvy colleagues and partners.
+                      Professional Impression: Embracing digital technology showcases your adaptability and modern
+                      approach to networking, leaving a positive impression on tech-savvy colleagues and partners.<br/>
                 </div>
             </div>
             <div class="sm:w-2/4 w-full p-6 sm:order-last">
