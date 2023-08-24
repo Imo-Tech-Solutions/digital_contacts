@@ -230,7 +230,7 @@ function Home() {
             </div>
           </div>
 
-          <div class="flex flex-wrap flex-col-reverse sm:flex-row justify-center bg-gray-100 border-b items-center" data-aos="fade-up">
+          <div class="flex flex-wrap flex-col-reverse sm:flex-row 2xl:flex-row justify-center bg-gray-100 border-b items-center" data-aos="fade-up">
             <div class="w-full sm:w-1/2 p-6">
                 <div class="text-gray-600">
                     <p class="text-2xl leading-none sm:text-2xl text-purple-header my-6">
@@ -269,7 +269,7 @@ function Home() {
                       When your information changes, there's no need to print new cards. Digital
                       cards can be updated instantly, ensuring your contacts always have accurate details. <br/>
 
-                      
+
                       < span className="text-gray-700 font-bold">Professional Impression:</span>
                       Embracing digital technology showcases your adaptability and modern
                       approach to networking, leaving a positive impression on tech-savvy colleagues and partners.<br/>
