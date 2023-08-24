@@ -158,7 +158,7 @@ function Home() {
 
 
 
-      <section class="bg-gray-100 border-b py-8" id="everything">
+      <section class="bg-white border-b py-8" id="everything">
         <div class="max-w-fit w-4/5 mx-auto m-8">
           <div className="text-center py-2 flex flex-col items-center justify-center">
             <p
