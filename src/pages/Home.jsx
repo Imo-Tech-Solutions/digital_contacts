@@ -191,28 +191,28 @@ function Home() {
               Benefits for Companies:
             </p>
 
-                < span className="text-gray-700 font-bold"> Eco-Friendly: </span>
+                < span className="text-gray-700 font-bold"> ✅ Eco-Friendly: </span>
                 Digital business cards eliminate the need for paper, reducing your company's
                 environmental footprint and contributing to sustainability efforts. < br/>
 
 
-                < span className="text-gray-700 font-bold"> Cost Savings: </span>
+                < span className="text-gray-700 font-bold">✅ Cost Savings: </span>
                 Printing and designing traditional business cards can be expensive, especially for
                 larger teams. Digital business cards are a one-time investment and can be easily updated without
                 additional costs. <br />
 
 
-                < span className="text-gray-700 font-bold">Easy Distribution: </span>
+                < span className="text-gray-700 font-bold">✅ Easy Distribution: </span>
                 Sharing digital business cards is as simple as sending a link or displaying a QR
                 code, saving time and effort compared to physically handing out cards. <br />
 
 
-                < span className="text-gray-700 font-bold">Analytics: </span>
+                < span className="text-gray-700 font-bold">✅ Analytics: </span>
                 With digital cards, you can track how many times your card has been viewed or scanned,
                 providing valuable insights into the effectiveness of your networking efforts. <br />
 
 
-                < span className="text-gray-700 font-bold">Enhanced Branding: </span>
+                < span className="text-gray-700 font-bold">✅ Enhanced Branding: </span>
                 Digital business cards can include multimedia elements like your company logo,
                 images, videos, and links to social media, helping you create a stronger and more dynamic brand
                 identity. <br />
@@ -241,40 +241,40 @@ function Home() {
                         Benefits for Individuals:
                     </p>
 
-                      < span className="text-gray-700 font-bold">Convenience: </span>
+                      < span className="text-gray-700 font-bold">✅ Convenience: </span>
                       People often misplace or run out of traditional business cards. With a digital
                       card stored on their smartphones, contacts are always just a click away. <br/>
 
 
-                      < span className="text-gray-700 font-bold">Reduced Clutter: </span>
+                      < span className="text-gray-700 font-bold">✅ Reduced Clutter: </span>
                       Traditional business cards can accumulate and clutter wallets or desk drawers.
                       Digital cards eliminate this physical clutter, providing a cleaner and more organized approach. <br />
 
 
-                      < span className="text-gray-700 font-bold">Easy Sharing: </span>
+                      < span className="text-gray-700 font-bold">✅ Easy Sharing: </span>
                       Sharing contact information is seamless – recipients can scan the QR code with
                       their smartphone's camera to instantly save your details, eliminating the need for manual
                       data entry. <br />
 
 
-                      < span className="text-gray-700 font-bold">Versatility: </span>
+                      < span className="text-gray-700 font-bold">✅ Versatility: </span>
                       Digital cards can be shared across various platforms, including email, messaging
                       apps, and social media. This flexibility makes it easier to connect in the recipient's
                       preferred way. <br />
 
 
-                      < span className="text-gray-700 font-bold">Interactive Elements: </span>
+                      < span className="text-gray-700 font-bold">✅ Interactive Elements: </span>
                       Digital cards can include interactive features like clickable links to
                       portfolios, LinkedIn profiles, or product pages, allowing recipients to engage with your
                       content directly. <br/>
 
 
-                      < span className="text-gray-700 font-bold">Always Up-to-Date:</span>
+                      < span className="text-gray-700 font-bold">✅ Always Up-to-Date:</span>
                       When your information changes, there's no need to print new cards. Digital
                       cards can be updated instantly, ensuring your contacts always have accurate details. <br/>
 
 
-                      < span className="text-gray-700 font-bold">Professional Impression:</span>
+                      < span className="text-gray-700 font-bold">✅ Professional Impression:</span>
                       Embracing digital technology showcases your adaptability and modern
                       approach to networking, leaving a positive impression on tech-savvy colleagues and partners.<br/>
 
