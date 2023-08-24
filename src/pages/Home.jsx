@@ -18,7 +18,6 @@ function Home() {
   useEffect(() => {
     const searchParams = new URLSearchParams(location.search);
     const sectionId = searchParams.get("section");
-
     if (sectionId) {
       const targetElement = document.getElementById(sectionId);
       if (targetElement) {
@@ -39,41 +38,34 @@ function Home() {
 
   const plans = [
     {
-      title: "Free",
-      description: "Access to basic features",
-      price: "Free",
+      title: "For Businesses",
+      description: "Register up to 20 employees",
+      price: "SLE 10,000",
       features: [
-        "Limited usage per month",
-        "Basic customer support",
-        "Ads-supported",
-        "Standard designs",
-        "No priority access",
+        "QRCards",
+        "B1 Business plaque (tabletop)",
       ],
       buttonColor: "bg-gray-600",
     },
     {
-      title: "Premium Version",
-      description: "Access to all features",
-      price: "Nle50.99/month",
+      title: "For Businesses",
+      description: "Register up to 50 employees",
+      price: "SLE 25,000",
       features: [
-        "Unlimited usage",
-        "Priority customer support",
-        "Ad-free experience",
-        "Premium designs",
-        "Monthly data export",
+        "QRCards",
+        "Phone Cases",
+        "Landing Page ",
       ],
       buttonColor: "bg-red-600", // Set the button background color to red
     },
     {
-      title: "QRcard Premium",
-      description: "Access to advanced features",
-      price: "Nle80.99/month",
+      title: "For individuals:",
+      description: "Registration",
+      price: "SLE 750 ",
       features: [
-        "Unlimited usage",
-        "Priority customer support",
-        "Ad-free experience",
-        "Premium designs",
-        "Unlimited data export",
+        "Registration",
+        "QRCard",
+        "Phone case",
       ],
       buttonColor: "bg-green-600", // Set the button background color to green
     },
@@ -103,18 +95,15 @@ function Home() {
             lg:max-w-xl xl:max-w-2xl lg:text-left"
           >
             <h1 className="text-4xl font-bold leading-none sm:text-5xl text-purple-header">
-              Scan, create and share <br />
-              <span className="text-purple"> business cards </span>
-              with only one app.
+              Create and share your<br />
+              <span className="text-purple"> virtual business card  </span>
+              with anyone, anywhere with IMO’s DigiCards!
             </h1>
             <p className="mt-6 mb-8 text-lg sm:mb-12 text-purple-body text-justify">
-              DigiCard is an eco-friendly business card application which can be
-              used on phones and tablets. It can scan your printed business
-              cards and save personal information automatically. Therefore, you
-              can get rid of keeping your cards and recycle them. Without
-              printing, you can share digital cards which you design on your
-              phone or tablet. You can make calls, send messages or e-mails and
-              take directions to addresses using cards you saved.{" "}
+              Go contactless and stay eco-friendly with our digital business cards. Instead of printing 200 cards,
+              you only need one QR code containing all your contact details that can be scanned and your information
+              is automatically saved in the phone. Are you excited yet? Well, don’t waste any more time. Take a look
+              at our products!{" "}
               <span className="text-blue-500"></span>
             </p>
             <div
@@ -157,13 +146,13 @@ function Home() {
           id="features"
           data-aos="fade-right"
         >
-          Features
+          Products
         </h2>
         <FeaturesCard />
       </section>
 
       <section
-        className="text-white w-full h-screen flex items-center justify-center bg-purple-light"
+        className="text-white w-full sm:h-screen flex items-center justify-center bg-purple-light"
         id="home"
       >
         <div className="bg-purple bg-opacity-70 p-12 rounded-lg shadow-xl">
@@ -270,7 +259,7 @@ function Home() {
                 />
               </div>
             </div>
-            <div class="w-full sm:w-2/5 w-1/2 p-6 sm:order-first ">
+            <div class="sm:w-2/5 w-1/2 p-6 sm:order-first ">
               <img class="w-full" src={qrl_scanner} alt="image" />
             </div>
           </div>
@@ -280,18 +269,19 @@ function Home() {
       <section className="bg-white py-16" id="pricing">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-semibold text-gray-800 mb-8 text-center">
-            Choose Your Plan
+            Our packages
           </h2>
+
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {plans.map((plan, index) => (
-              <div key={index} className="bg-white rounded-lg p-8 shadow-md">
+              <div key={index} className="bg-white rounded-lg p-8 sm:p-8 shadow-md">
                 <h3 className="text-xl font-semibold mb-4 text-center">
                   {plan.title}
                 </h3>
                 <p className="text-gray-600 mb-6 text-center">
                   {plan.description}
                 </p>
-                <p className="text-3xl font-semibold mb-6 text-center">
+                <p className="sm:text-2xl text-3xl  font-semibold mb-6 text-center">
                   {plan.price}
                 </p>
                 <ul className="text-sm text-gray-600">

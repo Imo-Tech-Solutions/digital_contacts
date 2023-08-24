@@ -8,9 +8,7 @@ import { HiUserCircle, HiMail, HiOutlinePencilAlt } from "react-icons/hi";
 import { FaPhone } from "react-icons/fa";
 import { AiOutlineLoading } from "react-icons/ai";
 import { IoIosSend } from "react-icons/io";
-
 import mailBox from "../lottieFile/contact_us_lottieFile.json";
-
 import twitter from "../icons/icons_Twitter.svg";
 import linkedIn from "../icons/icon_linkedin.svg";
 import facebook from "../icons/icon_facebook.svg";

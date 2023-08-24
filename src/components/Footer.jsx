@@ -13,7 +13,7 @@ function Footer() {
           <div className="md:mr-8">
             <h4 className="text-gray-800 uppercase font-semibold">Contact Me</h4>
             {/* <p className="text-gray-600 mt-2">
-              Address: 123 Street, usa, United State
+              Address: 123 Street, Freetown, Sierra Leone
             </p> */}
             <p className="text-gray-600 mt-1">Phone: +1 00 000 000</p>
             <p className="text-gray-600 mt-1">Email: info@imo-tech.com</p>
@@ -58,5 +58,4 @@ function Footer() {
     </footer>
   );
 }
-
 export default Footer;
