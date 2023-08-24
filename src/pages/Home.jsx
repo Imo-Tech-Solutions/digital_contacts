@@ -37,6 +37,18 @@ function Home() {
   const [openSection, setOpenSection] = useState("What is a QRL code?");
 
   const plans = [
+
+    {
+      title: "For individuals:",
+      description: "Registration",
+      price: "SLE 750 ",
+      features: [
+        "Registration",
+        "QRCard",
+        "Phone case",
+      ],
+      buttonColor: "bg-green-600", // Set the button background color to green
+    },
     {
       title: "For Businesses",
       description: "Register up to 20 employees",
@@ -57,17 +69,6 @@ function Home() {
         "Landing Page ",
       ],
       buttonColor: "bg-red-600", // Set the button background color to red
-    },
-    {
-      title: "For individuals:",
-      description: "Registration",
-      price: "SLE 750 ",
-      features: [
-        "Registration",
-        "QRCard",
-        "Phone case",
-      ],
-      buttonColor: "bg-green-600", // Set the button background color to green
     },
   ];
 
