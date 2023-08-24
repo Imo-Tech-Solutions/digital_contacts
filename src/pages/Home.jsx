@@ -7,6 +7,8 @@ import arrowIcon from "../images/icons_arrow.svg";
 import mobile from "../images/mobile_qrl.svg";
 import FeaturesCard from "../components/features";
 import ContactUs from "../components/ContactUs";
+import woman_with_phone from '../images/woman_with_phone.jpg'
+import woman_with_phone2 from '../images/woman_with_phone2.jpg'
 
 import Accordion from "../components/Accordion";
 
@@ -140,7 +142,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="my-20 sm:my-16">
+      <section className="my-20 sm:my-16 border-b ">
         <h2
           className="text-4xl text-center font-bold leading-none sm:text-3xl
           text-purple-header my-6"
@@ -152,41 +154,142 @@ function Home() {
         <FeaturesCard />
       </section>
 
-      <section
-        className="text-white w-full sm:h-screen flex items-center justify-center bg-purple-light"
-        id="home"
-      >
-        <div className="bg-purple bg-opacity-70 p-12 rounded-lg shadow-xl">
-          <h2 className="text-4xl font-semibold mb-6">Why Choose Us?</h2>
-          <ul className="list-disc list-inside text-xl">
-            <li className="mb-4">
-              ⭐ React provides efficient and performant UI rendering.
-            </li>
-            <li className="mb-4">
-              ⚡ Tailwind CSS offers a highly customizable design system.
-            </li>
-            <li className="mb-4">
-              🔧 React's component-based approach enhances code organization.
-            </li>
-            <li className="mb-4">
-              🎨 Tailwind CSS lets you create beautiful designs without writing
-              custom CSS.
-            </li>
-            <li className="mb-4">
-              🌐 React allows building dynamic and interactive web applications.
-            </li>
-            <li className="mb-4">
-              📱 Tailwind CSS is responsive by default, perfect for
-              mobile-friendly sites.
-            </li>
-          </ul>
-          <p className="text-sm">
-            Let's combine the power of React and the flexibility of Tailwind CSS
-            to create stunning user experiences!
-          </p>
-          <button className="mt-6 px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full shadow-lg focus:outline-none">
-            Get Started
-          </button>
+
+
+
+
+
+      <section class="bg-white border-b py-8" id="">
+        <div class="max-w-fit w-4/5 mx-auto m-8">
+          <div className="text-center py-2 flex flex-col items-center justify-center">
+            <p
+              className="text-4xl font-bold leading-none sm:text-3xl
+          text-purple-header mt-6"
+            >
+              Advantages of Digital Business Cards with QR Codes.
+            </p>
+            <div className="w-16 h-1 bg-purple mt-2" data-aos="fade-right">
+              {" "}
+            </div>
+          </div>
+
+
+          <div
+            class="flex flex-wrap flex-col-reverse sm:flex-row
+            bg-gray-100 border-b justify-center items-center"
+            data-aos="fade-up"
+          >
+            <div class="w-full sm:w-1/2 p-6">
+              <div className="text-gray-600">
+
+                <p
+              className="
+              text-2x1 leading-none sm:text-2xl
+              text-purple-header my-6
+              "
+            >
+              Benefits for Companies:
+            </p>
+
+                < span className="text-gray-700 font-bold"> Eco-Friendly: </span>
+                Digital business cards eliminate the need for paper, reducing your company's
+                environmental footprint and contributing to sustainability efforts. < br/>
+
+
+                < span className="text-gray-700 font-bold"> Cost Savings: </span>
+                Printing and designing traditional business cards can be expensive, especially for
+                larger teams. Digital business cards are a one-time investment and can be easily updated without
+                additional costs. <br />
+
+
+                < span className="text-gray-700 font-bold">Easy Distribution: </span>
+                Sharing digital business cards is as simple as sending a link or displaying a QR
+                code, saving time and effort compared to physically handing out cards. <br />
+
+
+                < span className="text-gray-700 font-bold">Analytics: </span>
+                With digital cards, you can track how many times your card has been viewed or scanned,
+                providing valuable insights into the effectiveness of your networking efforts. <br />
+
+
+                < span className="text-gray-700 font-bold">Enhanced Branding: </span>
+                Digital business cards can include multimedia elements like your company logo,
+                images, videos, and links to social media, helping you create a stronger and more dynamic brand
+                identity. <br />
+
+
+                < span className="text-gray-700 font-bold">Instant Updates: </span>
+                Company information can change over time. Digital cards allow you to update contact
+                details, promotions, or other information in real-time, ensuring recipients always have the most
+                accurate information.
+
+              </div>
+            </div>
+            <div class="sm:w-2/4 w-full p-6 sm:order-first ">
+              <img class="w-full" src={woman_with_phone} alt="image" />
+            </div>
+          </div>
+
+
+          <div class="flex flex-wrap flex-col sm:flex-row bg-gray-100 border-b justify-center items-center" data-aos="fade-up">
+            <div class="w-full sm:w-2/4 p-6 sm:order-last text-right">
+                <img class="w-full" src={woman_with_phone2} alt="image" />
+            </div>
+            <div class="w-full sm:w-2/4 p-6">
+                <div class="text-gray-600">
+                    <p class="text-2xl leading-none sm:text-2xl text-purple-header my-6">
+                        Benefits for Individuals:
+                    </p>
+
+                      < span className="text-gray-700 font-bold">Convenience: </span>
+                      People often misplace or run out of traditional business cards. With a digital
+                      card stored on their smartphones, contacts are always just a click away. <br/>
+
+
+                      < span className="text-gray-700 font-bold">Reduced Clutter: </span>
+                      Traditional business cards can accumulate and clutter wallets or desk drawers.
+                      Digital cards eliminate this physical clutter, providing a cleaner and more organized approach. <br />
+
+
+                      < span className="text-gray-700 font-bold">Easy Sharing: </span>
+                      Sharing contact information is seamless – recipients can scan the QR code with
+                      their smartphone's camera to instantly save your details, eliminating the need for manual
+                      data entry. <br />
+
+
+                      < span className="text-gray-700 font-bold">Versatility: </span>
+                      Digital cards can be shared across various platforms, including email, messaging
+                      apps, and social media. This flexibility makes it easier to connect in the recipient's
+                      preferred way. <br />
+
+
+                      < span className="text-gray-700 font-bold">Interactive Elements: </span>
+                      Digital cards can include interactive features like clickable links to
+                      portfolios, LinkedIn profiles, or product pages, allowing recipients to engage with your
+                      content directly. <br/>
+
+
+                      < span className="text-gray-700 font-bold">Always Up-to-Date:</span>
+                      When your information changes, there's no need to print new cards. Digital
+                      cards can be updated instantly, ensuring your contacts always have accurate details. <br/>
+
+
+                      < span className="text-gray-700 font-bold">Professional Impression:</span>
+                      Embracing digital technology showcases your adaptability and modern
+                      approach to networking, leaving a positive impression on tech-savvy colleagues and partners.<br/>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
         </div>
       </section>
 
