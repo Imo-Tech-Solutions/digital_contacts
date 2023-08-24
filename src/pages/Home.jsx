@@ -231,18 +231,17 @@ function Home() {
           </div>
 
 
+          <div class="flex flex-wrap flex-col sm:flex-row bg-gray-100 border-b justify-center items-center" data-aos="fade-up">
+            <div class="w-full sm:w-2/4 p-6 sm:order-last text-right">
+                <img class="w-full" src={woman_with_phone2} alt="image" />
+            </div>
+            <div class="w-full sm:w-2/4 p-6">
+                <div class="text-gray-600">
+                    <p class="text-2xl leading-none sm:text-2xl text-purple-header my-6">
+                        Benefits for Individuals:
+                    </p>
 
-
-          <div class="flex flex-wrap md:flex-col-reverse sm:flex-row 2xl:flex-row xl:flex-row lg:flex-row justify-center bg-gray-100 border-b items-center" data-aos="fade-up">
-    <div class="w-full sm:w-2/4 p-6 sm:order-last">
-        <img class="w-full" src={woman_with_phone2} alt="image" />
-    </div>
-    <div class="w-full sm:w-2/4 p-6">
-        <div class="text-gray-600">
-            <p class="text-2xl leading-none sm:text-2xl text-purple-header my-6">
-                Benefits for Individuals:
-            </p>
-            < span className="text-gray-700 font-bold">Convenience: </span>
+                      < span className="text-gray-700 font-bold">Convenience: </span>
                       People often misplace or run out of traditional business cards. With a digital
                       card stored on their smartphones, contacts are always just a click away. <br/>
 
@@ -278,14 +277,19 @@ function Home() {
                       < span className="text-gray-700 font-bold">Professional Impression:</span>
                       Embracing digital technology showcases your adaptability and modern
                       approach to networking, leaving a positive impression on tech-savvy colleagues and partners.<br/>
+
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
 
 
 
-         
+
+
+
+
+
         </div>
       </section>
 
