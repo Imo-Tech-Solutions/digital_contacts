@@ -41,7 +41,7 @@ function Home() {
   const plans = [
 
     {
-      title: "For individuals:",
+      title: "Individuals:",
       description: "Registration",
       price: "SLE 750 ",
       features: [
@@ -49,20 +49,20 @@ function Home() {
         "QRCard",
         "Phone case",
       ],
-      buttonColor: "bg-green-600", // Set the button background color to green
+      buttonColor: "bg-purple", // Set the button background color to green
     },
     {
-      title: "For Businesses",
+      title: "Businesses",
       description: "Register up to 20 employees",
       price: "SLE 10,000",
       features: [
         "QRCards",
         "B1 Business plaque (tabletop)",
       ],
-      buttonColor: "bg-gray-600",
+      buttonColor: "bg-purple",
     },
     {
-      title: "For Businesses",
+      title: "Businesses",
       description: "Register up to 50 employees",
       price: "SLE 25,000",
       features: [
@@ -70,7 +70,7 @@ function Home() {
         "Phone Cases",
         "Landing Page ",
       ],
-      buttonColor: "bg-red-600", // Set the button background color to red
+      buttonColor: "bg-purple", // Set the button background color to red
     },
   ];
 
