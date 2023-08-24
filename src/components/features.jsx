@@ -60,9 +60,10 @@ const Card = ({ icon, heading, description }) => {
 
 const FeaturesCard = () => {
   return (
-    <div className="flex flex-wrap w-full justify-center">
+    <div className="flex flex-wrap w-full justify-center items-center">
       {cardData.map((card) => (
-        <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 p-4" key={card.id}>
+        <div className="w-full sm:w-4/5 lg:w-1/3 xl:w-1/4 p-4
+        flex justify-center items-center" key={card.id}>
           <Card
             icon={card.icon}
             heading={card.heading}
