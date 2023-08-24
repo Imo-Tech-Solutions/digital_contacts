@@ -191,17 +191,37 @@ function Home() {
               Benefits for Companies:
             </p>
 
-                Eco-Friendly: Digital business cards eliminate the need for paper, reducing your company's environmental footprint and contributing to sustainability efforts.
+                < span className="text-gray-700 font-bold"> Eco-Friendly: </span>
+                Digital business cards eliminate the need for paper, reducing your company's
+                environmental footprint and contributing to sustainability efforts. < br/>
 
-                Cost Savings: Printing and designing traditional business cards can be expensive, especially for larger teams. Digital business cards are a one-time investment and can be easily updated without additional costs.
 
-                Easy Distribution: Sharing digital business cards is as simple as sending a link or displaying a QR code, saving time and effort compared to physically handing out cards.
+                < span className="text-gray-700 font-bold"> Cost Savings: </span>
+                Printing and designing traditional business cards can be expensive, especially for
+                larger teams. Digital business cards are a one-time investment and can be easily updated without
+                additional costs. <br />
 
-                Analytics: With digital cards, you can track how many times your card has been viewed or scanned, providing valuable insights into the effectiveness of your networking efforts.
 
-                Enhanced Branding: Digital business cards can include multimedia elements like your company logo, images, videos, and links to social media, helping you create a stronger and more dynamic brand identity.
+                < span className="text-gray-700 font-bold">Easy Distribution: </span>
+                Sharing digital business cards is as simple as sending a link or displaying a QR
+                code, saving time and effort compared to physically handing out cards. <br />
 
-                Instant Updates: Company information can change over time. Digital cards allow you to update contact details, promotions, or other information in real-time, ensuring recipients always have the most accurate information.
+
+                < span className="text-gray-700 font-bold">Analytics: </span>
+                With digital cards, you can track how many times your card has been viewed or scanned,
+                providing valuable insights into the effectiveness of your networking efforts. <br />
+
+
+                < span className="text-gray-700 font-bold">Enhanced Branding: </span>
+                Digital business cards can include multimedia elements like your company logo,
+                images, videos, and links to social media, helping you create a stronger and more dynamic brand
+                identity. <br />
+
+
+                < span className="text-gray-700 font-bold">Instant Updates: </span>
+                Company information can change over time. Digital cards allow you to update contact
+                details, promotions, or other information in real-time, ensuring recipients always have the most
+                accurate information.
 
               </div>
             </div>
