@@ -25,21 +25,21 @@ const PlanPopup = ({ plan, onClose, onSubmit }) => {
 
   return (
     <div className="popup-container fixed inset-0 flex justify-center items-center bg-gray-900 bg-opacity-70 z-50">
-    <div className="popup p-6 rounded-lg shadow-md bg-white w-5/6 relative">
-      <button
-        onClick={onClose}
-        className="absolute top-2 right-2 text-white hover:text-red-500 bg-red-600 px-2 py-2 rounded-full"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
+        <div className="popup p-6 rounded-lg shadow-md bg-white w-5/6 relative">
+        <button
+            onClick={onClose}
+            className="absolute top-2 right-2 text-white hover:text-red-500 bg-red-600 px-2 py-2 rounded-full"
         >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
 
 
         <h2 className="text-2xl font-semibold mb-4">{plan.title}</h2>
