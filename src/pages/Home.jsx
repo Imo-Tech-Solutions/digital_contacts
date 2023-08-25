@@ -393,7 +393,6 @@ function Home() {
 
 
 
-
       <section className="bg-white py-16" id="pricing">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-semibold text-gray-800 mb-8 text-center">
