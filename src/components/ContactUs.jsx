@@ -85,9 +85,9 @@ function ContactUs() {
             <div class="w-full sm:w-1/2 p-6">
               <div class="text-gray-600 mb-8 text-justify">
                 <h1 className="text-4xl font-bold leading-none sm:text-4xl text-purple-header">
-                  READY <br />
-                  <span className="text-purple"> FOR </span>
-                  PARTNERSHIP?
+                For inquiries, <br />
+                  <span className="text-purple"> contact us</span>
+                  !
                 </h1>
               </div>
 
