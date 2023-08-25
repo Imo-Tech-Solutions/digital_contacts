@@ -52,7 +52,6 @@ function Home() {
     }, 1000);
   };
 
-
   const location = useLocation();
   useEffect(() => {
     const searchParams = new URLSearchParams(location.search);
