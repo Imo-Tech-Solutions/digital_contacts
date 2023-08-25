@@ -427,7 +427,7 @@ function Home() {
 
                 <button
                   onClick={() => openPopup(plan)}
-                  className={`text-white rounded-md py-3 px-6 font-semibold hover:opacity-90
+                  className={`text-white rounded-md py-3 px-6 w-full font-semibold hover:opacity-90
                   focus:outline-none ${plan.buttonColor}`}
                 >
                   Get Started
