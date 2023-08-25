@@ -10,12 +10,53 @@ import ContactUs from "../components/ContactUs";
 import woman_with_phone from '../images/woman_with_phone.jpg'
 import woman_with_phone2 from '../images/woman_with_phone2.jpg'
 
+import PlanPopup from '../components/plansPopup/PlanPopup.js'
+
 import Accordion from "../components/Accordion";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 function Home() {
+
+
+
+  const [showPopup, setShowPopup] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState(null);
+
+  const openPopup = (plan) => {
+    setSelectedPlan(plan);
+    setShowPopup(true);
+  };
+
+  const closePopup = () => {
+    setSelectedPlan(null);
+    setShowPopup(false);
+  };
+
+  const onSubmit = (values, { setSubmitting }) => {
+    // Simulate submitting the form
+    setTimeout(() => {
+      console.log("Form values:", values);
+
+      // Handle the uploaded file
+      const uploadedFile = values.file;
+      if (uploadedFile) {
+        console.log("Uploaded file:", uploadedFile);
+        // You can upload the file to a server or perform any necessary processing here
+      }
+
+      // Close the popup
+      closePopup();
+      setSubmitting(false);
+    }, 1000);
+  };
+
+
+
+
+
+
   const location = useLocation();
   useEffect(() => {
     const searchParams = new URLSearchParams(location.search);
@@ -41,7 +82,7 @@ function Home() {
   const plans = [
 
     {
-      title: "Individuals:",
+      title: "Individuals",
       description: "Registration",
       price: "SLE 750 ",
       features: [
@@ -52,7 +93,7 @@ function Home() {
       buttonColor: "bg-purple", // Set the button background color to green
     },
     {
-      title: "Businesses",
+      title: "Businesses 20 Employees",
       description: "Register up to 20 employees",
       price: "SLE 10,000",
       features: [
@@ -62,7 +103,7 @@ function Home() {
       buttonColor: "bg-purple",
     },
     {
-      title: "Businesses",
+      title: "Businesses 50 Employees",
       description: "Register up to 50 employees",
       price: "SLE 25,000",
       features: [
@@ -154,11 +195,6 @@ function Home() {
         <FeaturesCard />
       </section>
 
-
-
-
-
-
       <section class="bg-white border-b py-8" id="">
         <div class="max-w-fit w-4/5 mx-auto m-8">
           <div className="text-center py-2 flex flex-col items-center justify-center">
@@ -172,7 +208,6 @@ function Home() {
               {" "}
             </div>
           </div>
-
 
           <div
             class="flex flex-wrap flex-col-reverse sm:flex-row
@@ -281,15 +316,6 @@ function Home() {
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
         </div>
       </section>
 
@@ -370,6 +396,11 @@ function Home() {
         </div>
       </section>
 
+
+
+
+
+
       <section className="bg-white py-16" id="pricing">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-semibold text-gray-800 mb-8 text-center">
@@ -385,7 +416,7 @@ function Home() {
                 <p className="text-gray-600 mb-6 text-center">
                   {plan.description}
                 </p>
-                <p className="sm:text-2xl text-3xl  font-semibold mb-6 text-center">
+                <p className="sm:text-2xl text-3xl font-semibold mb-6 text-center">
                   {plan.price}
                 </p>
                 <ul className="text-sm text-gray-600">
@@ -397,18 +428,17 @@ function Home() {
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <path
-                          fillRule="evenodd"
-                          d="M3 10a7 7 0 1114 0 7 7 0 01-14 0zm6.293 2.293a1 1 0 011.414 0L12 13.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-2-2a1 1 0 010-1.414z"
-                          clipRule="evenodd"
-                        />
+                        {/* SVG path */}
                       </svg>
                       {feature}
                     </li>
                   ))}
                 </ul>
+
                 <button
-                  className={`w-full text-white rounded-md py-3 px-6 font-semibold hover:opacity-90 focus:outline-none ${plan.buttonColor}`}
+                  onClick={() => openPopup(plan)}
+                  className={`text-white rounded-md py-3 px-6 font-semibold hover:opacity-90
+                  focus:outline-none ${plan.buttonColor}`}
                 >
                   Get Started
                 </button>
@@ -416,7 +446,20 @@ function Home() {
             ))}
           </div>
         </div>
+
+        {/* Render the popup */}
+        {showPopup && selectedPlan && (
+          <PlanPopup
+            plan={selectedPlan}
+            onClose={closePopup}
+            onSubmit={onSubmit}
+          />
+        )}
       </section>
+
+
+
+
 
       <section id="contact">
         <ContactUs />
