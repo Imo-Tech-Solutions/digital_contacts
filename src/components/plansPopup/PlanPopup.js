@@ -41,7 +41,6 @@ const PlanPopup = ({ plan, onClose, onSubmit }) => {
             </svg>
         </button>
 
-
         <h2 className="text-2xl font-semibold mb-4">{plan.title}</h2>
         <Formik
           initialValues={initialValues}
