@@ -20,7 +20,6 @@ import "aos/dist/aos.css";
 function Home() {
 
 
-
   const [showPopup, setShowPopup] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState(null);
 
