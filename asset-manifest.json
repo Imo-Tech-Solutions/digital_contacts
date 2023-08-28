@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/digital_contacts/static/css/main.8d304d3e.css",
-    "main.js": "/digital_contacts/static/js/main.7b88cc9e.js",
+    "main.css": "/digital_contacts/static/css/main.d59e69a3.css",
+    "main.js": "/digital_contacts/static/js/main.5adca5b2.js",
     "static/media/woman_with_phone.jpg": "/digital_contacts/static/media/woman_with_phone.de9dd3b62adaf0a98bd9.jpg",
     "static/media/woman_with_phone2.jpg": "/digital_contacts/static/media/woman_with_phone2.59ead54551ea4adaae0f.jpg",
     "static/media/key_handle.png": "/digital_contacts/static/media/key_handle.73230600b4e4468af5ea.png",
@@ -17,11 +17,11 @@
     "static/media/icons_arrow.svg": "/digital_contacts/static/media/icons_arrow.4559cf0e4edafac29cfe8ee84f6e7d9b.svg",
     "static/media/icon_linkedin.svg": "/digital_contacts/static/media/icon_linkedin.90b85a6318d876ad5236e55189f7edcb.svg",
     "static/media/icon_facebook.svg": "/digital_contacts/static/media/icon_facebook.2de1068936bcb8f32bd2167e6e342d3d.svg",
-    "main.8d304d3e.css.map": "/digital_contacts/static/css/main.8d304d3e.css.map",
-    "main.7b88cc9e.js.map": "/digital_contacts/static/js/main.7b88cc9e.js.map"
+    "main.d59e69a3.css.map": "/digital_contacts/static/css/main.d59e69a3.css.map",
+    "main.5adca5b2.js.map": "/digital_contacts/static/js/main.5adca5b2.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d304d3e.css",
-    "static/js/main.7b88cc9e.js"
+    "static/css/main.d59e69a3.css",
+    "static/js/main.5adca5b2.js"
   ]
 }
