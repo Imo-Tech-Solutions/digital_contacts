@@ -425,21 +425,21 @@ function Home() {
                 </ul>
 
                 <button
-    onClick={() => openPopup(plan)}
-    className={`text-white rounded-md py-3 px-6 w-full font-semibold hover:opacity-90
-                focus:outline-none ${plan.buttonColor}`}
-  >
-    Get Started
-  </button>
+                  onClick={() => openPopup(plan)}
+                  className={`text-white rounded-md py-3 px-6 w-full font-semibold hover:opacity-90
+                              focus:outline-none ${plan.buttonColor}`}
+                >
+                  Get Started
+                </button>
 
-  {/* Conditionally render the popup */}
-  {showPopup && selectedPlan && selectedPlan.title === plan.title && (
-    plan.title === "Individuals" ? (
-      <PlanPopup plan={selectedPlan} onClose={closePopup} onSubmit={onSubmit} />
-    ) : (
-      <BusinessPlanPopup plan={selectedPlan} onClose={closePopup} onSubmit={onSubmit} />
-    )
-  )}
+                {/* Conditionally render the popup */}
+                {showPopup && selectedPlan && selectedPlan.title === plan.title && (
+                  plan.title === "Individuals" ? (
+                    <PlanPopup plan={selectedPlan} onClose={closePopup} onSubmit={onSubmit} />
+                  ) : (
+                    <BusinessPlanPopup plan={selectedPlan} onClose={closePopup} onSubmit={onSubmit} />
+                  )
+                )}
               </div>
             ))}
           </div>
