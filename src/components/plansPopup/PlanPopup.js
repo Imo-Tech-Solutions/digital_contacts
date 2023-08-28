@@ -12,7 +12,10 @@ const PlanPopup = ({ plan, onClose, onSubmit }) => {
     others: "",
     description: "",
     profileImage: null,
-    socialMedia: "",
+    socialMedia1: "",
+    socialMedia2: "",
+    socialMedia3: "",
+    socialMedia4: "",
   };
 
   const validationSchema = Yup.object().shape({
@@ -24,7 +27,10 @@ const PlanPopup = ({ plan, onClose, onSubmit }) => {
     others: Yup.string(),
     description: Yup.string().required(),
     profileImage: Yup.mixed(),
-    socialMedia: Yup.string(),
+    socialMedia1: Yup.string(),
+    socialMedia2: Yup.string(),
+    socialMedia3: Yup.string(),
+    socialMedia4: Yup.string(),
   });
 
   return (
@@ -128,11 +134,44 @@ const PlanPopup = ({ plan, onClose, onSubmit }) => {
               <h2 className="text-2xl font-semibold mb-4 col-span-3">Social Media Accounts</h2>
 
 
+              <div className="form-group mb-4 ">
+                <label htmlFor="socialMedia1" className="block text-sm font-medium text-gray-700">
+                social Media Account 1
+                </label>
+                <Field type="text" name="socialMedia1" className="mt-1 p-2 border rounded-md w-full" />
+                <ErrorMessage name="socialMedia1" component="div" className="text-red-500 text-sm mt-1" />
+              </div>
+
+              <div className="form-group mb-4">
+                <label htmlFor="socialMedia2" className="block text-sm font-medium text-gray-700">
+                social Media Account 2
+                </label>
+                <Field type="text" name="socialMedia2" className="mt-1 p-2 border rounded-md w-full" />
+                <ErrorMessage name="socialMedia2" component="div" className="text-red-500 text-sm mt-1" />
+              </div>
+
+              <div className="form-group mb-4">
+                <label htmlFor="socialMedia3" className="block text-sm font-medium text-gray-700">
+                social Media Account 3
+                </label>
+                <Field type="text" name="socialMedia3" className="mt-1 p-2 border rounded-md w-full" />
+                <ErrorMessage name="socialMedia3" component="div" className="text-red-500 text-sm mt-1" />
+              </div>
+
+              <div className="form-group mb-4">
+                <label htmlFor="socialMedia4" className="block text-sm font-medium text-gray-700">
+                social Media Account 4
+                </label>
+                <Field type="text" name="socialMedia4" className="mt-1 p-2 border rounded-md w-full" />
+                <ErrorMessage name="socialMedia4" component="div" className="text-red-500 text-sm mt-1" />
+              </div>
+
               {/* ... Add more form fields here ... */}
 
               <button
                 type="submit"
-                className="bg-purple text-white p-2 rounded-md hover:bg-purple-dark transition-colors duration-300"
+                className="bg-purple text-white p-2 rounded-md hover:bg-purple-dark
+                col-span-3 transition-colors duration-300"
               >
                 Submit
               </button>
