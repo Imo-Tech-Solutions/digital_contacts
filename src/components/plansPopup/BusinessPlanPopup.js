@@ -4,6 +4,7 @@ import * as Yup from "yup";
 
 const BusinessPlanPopup = ({ plan, onClose, onSubmit }) => {
   const initialValues = {
+    profileImage: null,
     OrganizationName: "",
     address: "",
     phoneNumber: "",
@@ -12,6 +13,7 @@ const BusinessPlanPopup = ({ plan, onClose, onSubmit }) => {
   };
 
   const validationSchema = Yup.object().shape({
+    profileImage: Yup.mixed(),
     OrganizationName: Yup.string().required("First name is required"),
     address: Yup.string().required("address is required"),
     phoneNumber: Yup.string().required("Phone number is required"),
