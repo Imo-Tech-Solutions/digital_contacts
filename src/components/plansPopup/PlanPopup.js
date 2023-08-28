@@ -4,7 +4,9 @@ import * as Yup from "yup";
 
 const PlanPopup = ({ plan, onClose, onSubmit }) => {
   const initialValues = {
-    fullName: "",
+    fName: "",
+    mName: "",
+    lName: "",
     phoneNumber: "",
     profileImage: null,
     houseAddress: "",
@@ -14,7 +16,9 @@ const PlanPopup = ({ plan, onClose, onSubmit }) => {
   };
 
   const validationSchema = Yup.object().shape({
-    fullName: Yup.string().required("Full name is required"),
+    fName: Yup.string().required("First name is required"),
+    mName: Yup.string(),
+    lName: Yup.string().required("Last name is required"),
     phoneNumber: Yup.string().required("Phone number is required"),
     profileImage: Yup.mixed(),
     houseAddress: Yup.string().required("House address is required"),
@@ -49,25 +53,10 @@ const PlanPopup = ({ plan, onClose, onSubmit }) => {
         >
           {({ touched, errors, setFieldValue }) => (
             <Form className="sm:grid sm:grid-cols-3 sm:gap-4">
-              <div className="form-group mb-4">
-                <label htmlFor="fullName" className="block text-sm font-medium text-gray-700">
-                  Full Name
-                </label>
-                <Field type="text" name="fullName" className="mt-1 p-2 border rounded-md w-full" />
-                <ErrorMessage name="fullName" component="div" className="text-red-500 text-sm mt-1" />
-              </div>
-
-              <div className="form-group mb-4">
-                <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700">
-                  Phone Number
-                </label>
-                <Field type="text" name="phoneNumber" className="mt-1 p-2 border rounded-md w-full" />
-                <ErrorMessage name="phoneNumber" component="div" className="text-red-500 text-sm mt-1" />
-              </div>
 
               <div className="form-group mb-4">
                 <label htmlFor="profileImage" className="block text-sm font-medium text-gray-700">
-                  Profile Image
+                  Image
                 </label>
                 <input
                   type="file"
@@ -79,6 +68,39 @@ const PlanPopup = ({ plan, onClose, onSubmit }) => {
                 />
                 <ErrorMessage name="profileImage" component="div" className="text-red-500 text-sm mt-1" />
               </div>
+
+              <div className="form-group mb-4">
+                <label htmlFor="fName" className="block text-sm font-medium text-gray-700">
+                  First Name
+                </label>
+                <Field type="text" name="fName" className="mt-1 p-2 border rounded-md w-full" />
+                <ErrorMessage name="fName" component="div" className="text-red-500 text-sm mt-1" />
+              </div>
+
+              <div className="form-group mb-4">
+                <label htmlFor="mName" className="block text-sm font-medium text-gray-700">
+                  Middle Name
+                </label>
+                <Field type="text" name="mName" className="mt-1 p-2 border rounded-md w-full" />
+                <ErrorMessage name="mName" component="div" className="text-red-500 text-sm mt-1" />
+              </div>
+
+              <div className="form-group mb-4">
+                <label htmlFor="lName" className="block text-sm font-medium text-gray-700">
+                  Last Name
+                </label>
+                <Field type="text" name="lName" className="mt-1 p-2 border rounded-md w-full" />
+                <ErrorMessage name="lName" component="div" className="text-red-500 text-sm mt-1" />
+              </div>
+
+              <div className="form-group mb-4">
+                <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700">
+                  Phone Number
+                </label>
+                <Field type="text" name="phoneNumber" className="mt-1 p-2 border rounded-md w-full" />
+                <ErrorMessage name="phoneNumber" component="div" className="text-red-500 text-sm mt-1" />
+              </div>
+
 
               {/* ... Add more form fields here ... */}
 
