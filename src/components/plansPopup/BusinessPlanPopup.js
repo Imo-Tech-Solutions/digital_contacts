@@ -21,7 +21,7 @@ const BusinessPlanPopup = ({ plan, onClose, onSubmit }) => {
 
   return (
     <div className="popup-container fixed inset-0 flex justify-center items-center bg-gray-900 bg-opacity-70 z-50 overflow-y-auto">
-        <div className="popup p-6 rounded-lg shadow-md bg-white w-5/6 relative sm:mt-0 mt-auto">
+        <div className="popup p-6 rounded-lg shadow-md bg-white w-5/6 relative">
         <button
             onClick={onClose}
             className="absolute top-2 right-2 text-white hover:text-red-500 bg-red-600 px-2 py-2 rounded-full"
