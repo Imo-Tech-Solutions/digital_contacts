@@ -11,6 +11,7 @@ import woman_with_phone from '../images/woman_with_phone.jpg'
 import woman_with_phone2 from '../images/woman_with_phone2.jpg'
 
 import PlanPopup from '../components/plansPopup/PlanPopup.js'
+import BusinessPlanPopup from '../components/plansPopup/BusinessPlanPopup.js'
 
 import Accordion from "../components/Accordion";
 
@@ -424,25 +425,34 @@ function Home() {
                 </ul>
 
                 <button
-                  onClick={() => openPopup(plan)}
-                  className={`text-white rounded-md py-3 px-6 w-full font-semibold hover:opacity-90
-                  focus:outline-none ${plan.buttonColor}`}
-                >
-                  Get Started
-                </button>
+    onClick={() => openPopup(plan)}
+    className={`text-white rounded-md py-3 px-6 w-full font-semibold hover:opacity-90
+                focus:outline-none ${plan.buttonColor}`}
+  >
+    Get Started
+  </button>
+
+  {/* Conditionally render the popup */}
+  {showPopup && selectedPlan && selectedPlan.title === plan.title && (
+    plan.title === "Individuals" ? (
+      <PlanPopup plan={selectedPlan} onClose={closePopup} onSubmit={onSubmit} />
+    ) : (
+      <BusinessPlanPopup plan={selectedPlan} onClose={closePopup} onSubmit={onSubmit} />
+    )
+  )}
               </div>
             ))}
           </div>
         </div>
 
         {/* Render the popup */}
-        {showPopup && selectedPlan && (
-          <PlanPopup
+        {/* {showPopup && selectedPlan && (
+            <PlanPopup
             plan={selectedPlan}
             onClose={closePopup}
             onSubmit={onSubmit}
           />
-        )}
+        )} */}
       </section>
 
       <section id="contact">
