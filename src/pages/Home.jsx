@@ -444,15 +444,6 @@ function Home() {
             ))}
           </div>
         </div>
-
-        {/* Render the popup */}
-        {/* {showPopup && selectedPlan && (
-            <PlanPopup
-            plan={selectedPlan}
-            onClose={closePopup}
-            onSubmit={onSubmit}
-          />
-        )} */}
       </section>
 
       <section id="contact">
