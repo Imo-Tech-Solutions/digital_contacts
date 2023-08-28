@@ -48,7 +48,7 @@ const PlanPopup = ({ plan, onClose, onSubmit }) => {
           onSubmit={onSubmit}
         >
           {({ touched, errors, setFieldValue }) => (
-            <Form>
+            <Form className="grid grid-cols-4 gap-4">
               <div className="form-group mb-4">
                 <label htmlFor="fullName" className="block text-sm font-medium text-gray-700">
                   Full Name
