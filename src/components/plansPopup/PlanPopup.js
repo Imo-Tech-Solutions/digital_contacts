@@ -8,6 +8,7 @@ const PlanPopup = ({ plan, onClose, onSubmit }) => {
     mName: "",
     lName: "",
     phoneNumber: "",
+    email: "",
     profileImage: null,
     houseAddress: "",
     officeName: "",
@@ -20,6 +21,7 @@ const PlanPopup = ({ plan, onClose, onSubmit }) => {
     mName: Yup.string(),
     lName: Yup.string().required("Last name is required"),
     phoneNumber: Yup.string().required("Phone number is required"),
+    email: Yup.string().email().required("email is required"),
     profileImage: Yup.mixed(),
     houseAddress: Yup.string().required("House address is required"),
     officeName: Yup.string().required("Office name is required"),
@@ -99,6 +101,14 @@ const PlanPopup = ({ plan, onClose, onSubmit }) => {
                 </label>
                 <Field type="text" name="phoneNumber" className="mt-1 p-2 border rounded-md w-full" />
                 <ErrorMessage name="phoneNumber" component="div" className="text-red-500 text-sm mt-1" />
+              </div>
+
+              <div className="form-group mb-4">
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                  Emaile
+                </label>
+                <Field type="text" name="email" className="mt-1 p-2 border rounded-md w-full" />
+                <ErrorMessage name="email" component="div" className="text-red-500 text-sm mt-1" />
               </div>
 
 
