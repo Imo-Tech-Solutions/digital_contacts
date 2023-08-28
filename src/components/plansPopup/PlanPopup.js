@@ -52,6 +52,7 @@ const PlanPopup = ({ plan, onClose, onSubmit }) => {
         </button>
 
         <h2 className="text-2xl font-semibold mb-4">{plan.title}</h2>
+        <h2 className="text-2xl font-semibold text-gray-500 mb-4">Enter Personal Information Bellow</h2>
         <Formik
           initialValues={initialValues}
           validationSchema={validationSchema}
