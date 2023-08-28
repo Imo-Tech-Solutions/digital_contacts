@@ -49,7 +49,7 @@ const BusinessPlanPopup = ({ plan, onClose, onSubmit }) => {
 
               <div className="form-group mb-4">
                 <label htmlFor="profileImage" className="block text-sm font-medium text-gray-700">
-                  Image
+                  Business Logo
                 </label>
                 <input
                   type="file"
