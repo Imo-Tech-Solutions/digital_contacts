@@ -9,6 +9,8 @@ const PlanPopup = ({ plan, onClose, onSubmit }) => {
     lName: "",
     phoneNumber: "",
     email: "",
+    others: "",
+    description: "",
     profileImage: null,
     houseAddress: "",
     officeName: "",
@@ -22,6 +24,8 @@ const PlanPopup = ({ plan, onClose, onSubmit }) => {
     lName: Yup.string().required("Last name is required"),
     phoneNumber: Yup.string().required("Phone number is required"),
     email: Yup.string().email().required("email is required"),
+    others: Yup.string(),
+    description: Yup.string().required(),
     profileImage: Yup.mixed(),
     houseAddress: Yup.string().required("House address is required"),
     officeName: Yup.string().required("Office name is required"),
@@ -105,10 +109,26 @@ const PlanPopup = ({ plan, onClose, onSubmit }) => {
 
               <div className="form-group mb-4">
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                  Emaile
+                  Email
                 </label>
                 <Field type="text" name="email" className="mt-1 p-2 border rounded-md w-full" />
                 <ErrorMessage name="email" component="div" className="text-red-500 text-sm mt-1" />
+              </div>
+
+              <div className="form-group mb-4">
+                <label htmlFor="others" className="block text-sm font-medium text-gray-700">
+                  Others
+                </label>
+                <Field type="text" name="others" className="mt-1 p-2 border rounded-md w-full" />
+                <ErrorMessage name="others" component="div" className="text-red-500 text-sm mt-1" />
+              </div>
+
+              <div className="form-group mb-4 col-span-2">
+                <label htmlFor="description" className="block text-sm font-medium text-gray-700">
+                  Description
+                </label>
+                <Field type="text" name="description" className="mt-1 p-2 border rounded-md w-full" />
+                <ErrorMessage name="description" component="div" className="text-red-500 text-sm mt-1" />
               </div>
 
 
