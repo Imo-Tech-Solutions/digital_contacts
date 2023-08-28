@@ -12,9 +12,6 @@ const PlanPopup = ({ plan, onClose, onSubmit }) => {
     others: "",
     description: "",
     profileImage: null,
-    houseAddress: "",
-    officeName: "",
-    officeAddress: "",
     socialMedia: "",
   };
 
@@ -27,9 +24,6 @@ const PlanPopup = ({ plan, onClose, onSubmit }) => {
     others: Yup.string(),
     description: Yup.string().required(),
     profileImage: Yup.mixed(),
-    houseAddress: Yup.string().required("House address is required"),
-    officeName: Yup.string().required("Office name is required"),
-    officeAddress: Yup.string().required("Office address is required"),
     socialMedia: Yup.string(),
   });
 
@@ -130,6 +124,8 @@ const PlanPopup = ({ plan, onClose, onSubmit }) => {
                 <Field type="text" name="description" className="mt-1 p-2 border rounded-md w-full" />
                 <ErrorMessage name="description" component="div" className="text-red-500 text-sm mt-1" />
               </div>
+
+              <h2 className="text-2xl font-semibold mb-4 col-span-3">Social Media Accounts</h2>
 
 
               {/* ... Add more form fields here ... */}
