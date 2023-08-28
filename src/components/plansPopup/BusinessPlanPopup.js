@@ -4,25 +4,19 @@ import * as Yup from "yup";
 
 const BusinessPlanPopup = ({ plan, onClose, onSubmit }) => {
   const initialValues = {
-    fName: "",
-    mName: "",
-    lName: "",
+    OrganizationName: "",
+    address: "",
     phoneNumber: "",
     email: "",
-    others: "",
-    description: "",
-    profileImage: null,
+    webURL: "",
   };
 
   const validationSchema = Yup.object().shape({
-    fName: Yup.string().required("First name is required"),
-    mName: Yup.string(),
-    lName: Yup.string().required("Last name is required"),
+    OrganizationName: Yup.string().required("First name is required"),
+    address: Yup.string().required("address is required"),
     phoneNumber: Yup.string().required("Phone number is required"),
     email: Yup.string().email().required("email is required"),
-    others: Yup.string(),
-    description: Yup.string().required(),
-    profileImage: Yup.mixed(),
+    webURL: Yup.string(),
   });
 
   return (
@@ -44,6 +38,7 @@ const BusinessPlanPopup = ({ plan, onClose, onSubmit }) => {
         </button>
 
         <h2 className="text-2xl font-semibold mb-4">{plan.title}</h2>
+        <h2 className="text-2xl font-semibold text-gray-500 mb-4">Business Details</h2>
         <Formik
           initialValues={initialValues}
           validationSchema={validationSchema}
@@ -68,27 +63,19 @@ const BusinessPlanPopup = ({ plan, onClose, onSubmit }) => {
               </div>
 
               <div className="form-group mb-4">
-                <label htmlFor="fName" className="block text-sm font-medium text-gray-700">
-                  First Name
+                <label htmlFor="OrganizationName" className="block text-sm font-medium text-gray-700">
+                  Organization Name
                 </label>
-                <Field type="text" name="fName" className="mt-1 p-2 border rounded-md w-full" />
-                <ErrorMessage name="fName" component="div" className="text-red-500 text-sm mt-1" />
+                <Field type="text" name="OrganizationName" className="mt-1 p-2 border rounded-md w-full" />
+                <ErrorMessage name="OrganizationName" component="div" className="text-red-500 text-sm mt-1" />
               </div>
 
               <div className="form-group mb-4">
-                <label htmlFor="mName" className="block text-sm font-medium text-gray-700">
-                  Middle Name
+                <label htmlFor="address" className="block text-sm font-medium text-gray-700">
+                  Address
                 </label>
-                <Field type="text" name="mName" className="mt-1 p-2 border rounded-md w-full" />
-                <ErrorMessage name="mName" component="div" className="text-red-500 text-sm mt-1" />
-              </div>
-
-              <div className="form-group mb-4">
-                <label htmlFor="lName" className="block text-sm font-medium text-gray-700">
-                  Last Name
-                </label>
-                <Field type="text" name="lName" className="mt-1 p-2 border rounded-md w-full" />
-                <ErrorMessage name="lName" component="div" className="text-red-500 text-sm mt-1" />
+                <Field type="text" name="address" className="mt-1 p-2 border rounded-md w-full" />
+                <ErrorMessage name="address" component="div" className="text-red-500 text-sm mt-1" />
               </div>
 
               <div className="form-group mb-4">
@@ -108,19 +95,11 @@ const BusinessPlanPopup = ({ plan, onClose, onSubmit }) => {
               </div>
 
               <div className="form-group mb-4">
-                <label htmlFor="others" className="block text-sm font-medium text-gray-700">
-                  Others
+                <label htmlFor="webURL" className="block text-sm font-medium text-gray-700">
+                  Website URL
                 </label>
-                <Field type="text" name="others" className="mt-1 p-2 border rounded-md w-full" />
-                <ErrorMessage name="others" component="div" className="text-red-500 text-sm mt-1" />
-              </div>
-
-              <div className="form-group mb-4 col-span-2">
-                <label htmlFor="description" className="block text-sm font-medium text-gray-700">
-                  Description
-                </label>
-                <Field type="text" name="description" className="mt-1 p-2 border rounded-md w-full" />
-                <ErrorMessage name="description" component="div" className="text-red-500 text-sm mt-1" />
+                <Field type="text" name="webURL" className="mt-1 p-2 border rounded-md w-full" />
+                <ErrorMessage name="webURL" component="div" className="text-red-500 text-sm mt-1" />
               </div>
 
               {/* ... Add more form fields here ... */}
