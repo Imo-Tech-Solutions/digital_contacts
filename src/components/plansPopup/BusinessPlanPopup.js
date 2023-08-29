@@ -124,4 +124,5 @@ const BusinessPlanPopup = ({ plan, onClose, onSubmit }) => {
   );
 };
 
+
 export default BusinessPlanPopup;
