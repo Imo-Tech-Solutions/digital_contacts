@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/digital_contacts/static/css/main.d59e69a3.css",
-    "main.js": "/digital_contacts/static/js/main.550cc24c.js",
+    "main.css": "/digital_contacts/static/css/main.7a3ef34e.css",
+    "main.js": "/digital_contacts/static/js/main.e4dfd963.js",
     "static/media/woman_with_phone.jpg": "/digital_contacts/static/media/woman_with_phone.de9dd3b62adaf0a98bd9.jpg",
     "static/media/woman_with_phone2.jpg": "/digital_contacts/static/media/woman_with_phone2.59ead54551ea4adaae0f.jpg",
     "static/media/key_handle.png": "/digital_contacts/static/media/key_handle.73230600b4e4468af5ea.png",
+    "static/media/logo_one.png": "/digital_contacts/static/media/logo_one.8f8ef83da997f1fb09d2.png",
     "static/media/qel_scanner.png": "/digital_contacts/static/media/qel_scanner.71d400bacd11d335acf8.png",
     "static/media/business _plaques.png": "/digital_contacts/static/media/business _plaques.cde6f3fe8b00e663d70e.png",
     "static/media/phone_case.png": "/digital_contacts/static/media/phone_case.5fb4dfd6adda8b0e201a.png",
     "static/media/qrl_scan2.png": "/digital_contacts/static/media/qrl_scan2.7d49fa45f11e9da06484.png",
-    "static/media/logo_one.png": "/digital_contacts/static/media/logo_one.a7f5cef7d9c0809c5c29.png",
     "static/media/mobile_qrl.svg": "/digital_contacts/static/media/mobile_qrl.6c771f7fb8efff10119c7623e912c44b.svg",
     "static/media/icon_phone.svg": "/digital_contacts/static/media/icon_phone.a679130d0264e6457640093268c92e3f.svg",
     "static/media/icons_Twitter.svg": "/digital_contacts/static/media/icons_Twitter.08e8bafee6b81713c06e984ac3d91ce1.svg",
@@ -17,11 +17,11 @@
     "static/media/icons_arrow.svg": "/digital_contacts/static/media/icons_arrow.4559cf0e4edafac29cfe8ee84f6e7d9b.svg",
     "static/media/icon_linkedin.svg": "/digital_contacts/static/media/icon_linkedin.90b85a6318d876ad5236e55189f7edcb.svg",
     "static/media/icon_facebook.svg": "/digital_contacts/static/media/icon_facebook.2de1068936bcb8f32bd2167e6e342d3d.svg",
-    "main.d59e69a3.css.map": "/digital_contacts/static/css/main.d59e69a3.css.map",
-    "main.550cc24c.js.map": "/digital_contacts/static/js/main.550cc24c.js.map"
+    "main.7a3ef34e.css.map": "/digital_contacts/static/css/main.7a3ef34e.css.map",
+    "main.e4dfd963.js.map": "/digital_contacts/static/js/main.e4dfd963.js.map"
   },
   "entrypoints": [
-    "static/css/main.d59e69a3.css",
-    "static/js/main.550cc24c.js"
+    "static/css/main.7a3ef34e.css",
+    "static/js/main.e4dfd963.js"
   ]
 }
