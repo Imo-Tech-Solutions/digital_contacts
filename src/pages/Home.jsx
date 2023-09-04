@@ -87,7 +87,7 @@ function Home() {
       buttonColor: "bg-purple", // Set the button background color to green
     },
     {
-      title: "Businesses 20 Employees",
+      title: "Businesses",
       description: "Register up to 20 employees",
       price: "SLE 10,000",
       features: [
@@ -97,7 +97,7 @@ function Home() {
       buttonColor: "bg-purple",
     },
     {
-      title: "Businesses 50 Employees",
+      title: "Businesses Pro",
       description: "Register up to 50 employees",
       price: "SLE 25,000",
       features: [
