@@ -30,7 +30,7 @@ function Footer() {
                   rel="GitHub noreferrer"
                   href="#"
                   target="_blank"
-                  className="px-4 py-2 flex justify-center
+                  className="px-1 py-2 flex justify-center
                     transform hover:scale-110 transition-transform duration-300"
                 >
                   <img class="w-8 h-8" src={twitter} alt="image" />
@@ -40,7 +40,7 @@ function Footer() {
                   rel="facebook noreferrer"
                   href="#"
                   target="_blank"
-                  className="px-4 py-2 flex justify-center
+                  className="px-1 py-2 flex justify-center
                     transform hover:scale-110 transition-transform duration-300"
                 >
                   <img class="w-8 h-8 " src={facebook} alt="image" />
@@ -49,7 +49,7 @@ function Footer() {
                 <a
                   rel="phone"
                   href="tel: +23279000000"
-                  className="px-4 py-2 flex justify-center
+                  className="px-1 py-2 flex justify-center
                     transform hover:scale-110 transition-transform duration-300"
                 >
                   <img class="w-8 h-8 " src={phone} alt="image" />
