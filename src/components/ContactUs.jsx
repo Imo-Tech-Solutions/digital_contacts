@@ -266,7 +266,7 @@ function ContactUs() {
                   sm:flex-row sm:space-y-0 space-x-4 mt-6
                   sm:space-x-4 lg:justify-center md:items-center"
               >
-                <a
+                {/* <a
                   rel="GitHub noreferrer"
                   href="#"
                   target="_blank"
@@ -303,7 +303,7 @@ function ContactUs() {
                     transform hover:scale-110 transition-transform duration-300"
                 >
                   <img class="w-10 h-10 " src={phone} alt="image" />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
