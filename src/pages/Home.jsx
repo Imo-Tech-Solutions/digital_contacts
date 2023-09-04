@@ -161,7 +161,7 @@ function Home() {
               </Link>
             </div>
           </div>
-          
+
           <div
             className="
             flex items-center justify-center p-6 mt-8
@@ -237,7 +237,7 @@ function Home() {
                 code, saving time and effort compared to physically handing out cards. <br />
 
 
-                < span className="text-gray-700 font-bold">✅ Analytics: </span>
+                {/* < span className="text-gray-700 font-bold">✅ Analytics: </span>
                 With digital cards, you can track how many times your card has been viewed or scanned,
                 providing valuable insights into the effectiveness of your networking efforts. <br />
 
@@ -251,7 +251,7 @@ function Home() {
                 < span className="text-gray-700 font-bold">✅ Instant Updates: </span>
                   Company information can change over time. Digital cards allow you to update contact
                   details, promotions, or other information in real-time, ensuring recipients always have the most
-                  accurate information.
+                  accurate information. */}
 
               </div>
             </div>
@@ -287,7 +287,7 @@ function Home() {
                       data entry. <br />
 
 
-                      < span className="text-gray-700 font-bold">✅ Versatility: </span>
+                      {/* < span className="text-gray-700 font-bold">✅ Versatility: </span>
                       Digital cards can be shared across various platforms, including email, messaging
                       apps, and social media. This flexibility makes it easier to connect in the recipient's
                       preferred way. <br />
@@ -306,7 +306,7 @@ function Home() {
 
                       < span className="text-gray-700 font-bold">✅ Professional Impression:</span>
                       Embracing digital technology showcases your adaptability and modern
-                      approach to networking, leaving a positive impression on tech-savvy colleagues and partners.<br/>
+                      approach to networking, leaving a positive impression on tech-savvy colleagues and partners.<br/> */}
 
                 </div>
             </div>
