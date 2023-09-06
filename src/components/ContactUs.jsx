@@ -213,26 +213,26 @@ function ContactUs() {
                 </div>
                 <div className="flex items-center justify-center">
                 <button
-  className={`${
-    loading
-      ? "bg-purple cursor-not-allowed"
-      : "bg-purple transform hover:scale-110 transition-transform duration-300"
-  } text-white font-bold py-2 px-4 rounded-lg flex items-center focus:outline-none`}
-  type="submit"
-  disabled={loading}
->
-  {loading ? (
-    <>
-      <span className="mr-2">Loading</span>
-      <AiOutlineLoading className="animate-spin h-5 w-5 text-white" />
-    </>
-  ) : (
-    <>
-      <span>Submit</span>
-      <IoIosSend className="ml-2 h-5 w-5" />
-    </>
-  )}
-</button>
+                className={`${
+                  loading
+                    ? "bg-purple cursor-not-allowed"
+                    : "bg-purple transform hover:scale-110 transition-transform duration-300"
+                } text-white font-bold py-2 px-4 rounded-lg flex items-center focus:outline-none`}
+                type="submit"
+                disabled={loading}
+              >
+                {loading ? (
+                  <>
+                    <span className="mr-2">Loading</span>
+                    <AiOutlineLoading className="animate-spin h-5 w-5 text-white" />
+                  </>
+                ) : (
+                  <>
+                    <span>Submit</span>
+                    <IoIosSend className="ml-2 h-5 w-5" />
+                  </>
+                )}
+              </button>
                 </div>
                 <input type="hidden" value={loading} {...register("loading")} />
 
@@ -266,7 +266,7 @@ function ContactUs() {
                   sm:flex-row sm:space-y-0 space-x-4 mt-6
                   sm:space-x-4 lg:justify-center md:items-center"
               >
-                <a
+                {/* <a
                   rel="GitHub noreferrer"
                   href="#"
                   target="_blank"
@@ -303,7 +303,7 @@ function ContactUs() {
                     transform hover:scale-110 transition-transform duration-300"
                 >
                   <img class="w-10 h-10 " src={phone} alt="image" />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

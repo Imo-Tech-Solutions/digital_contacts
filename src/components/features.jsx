@@ -24,7 +24,7 @@ const cardData = [
     heading: `Business Plaques SLE 1,000`,
   },
   {
-    id: 3,
+    id: 4,
     icon: qrl,
     heading: `QRCard SLE 250`,
   },

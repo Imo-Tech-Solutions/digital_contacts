@@ -11,6 +11,7 @@ import woman_with_phone from '../images/woman_with_phone.jpg'
 import woman_with_phone2 from '../images/woman_with_phone2.jpg'
 
 import PlanPopup from '../components/plansPopup/PlanPopup.js'
+import BusinessPlanPopup from '../components/plansPopup/BusinessPlanPopup.js'
 
 import Accordion from "../components/Accordion";
 
@@ -18,8 +19,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function Home() {
-
-
 
   const [showPopup, setShowPopup] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState(null);
@@ -51,11 +50,6 @@ function Home() {
       setSubmitting(false);
     }, 1000);
   };
-
-
-
-
-
 
   const location = useLocation();
   useEffect(() => {
@@ -93,7 +87,7 @@ function Home() {
       buttonColor: "bg-purple", // Set the button background color to green
     },
     {
-      title: "Businesses 20 Employees",
+      title: "Businesses",
       description: "Register up to 20 employees",
       price: "SLE 10,000",
       features: [
@@ -103,7 +97,7 @@ function Home() {
       buttonColor: "bg-purple",
     },
     {
-      title: "Businesses 50 Employees",
+      title: "Businesses Pro",
       description: "Register up to 50 employees",
       price: "SLE 25,000",
       features: [
@@ -167,6 +161,7 @@ function Home() {
               </Link>
             </div>
           </div>
+
           <div
             className="
             flex items-center justify-center p-6 mt-8
@@ -242,7 +237,7 @@ function Home() {
                 code, saving time and effort compared to physically handing out cards. <br />
 
 
-                < span className="text-gray-700 font-bold">✅ Analytics: </span>
+                {/* < span className="text-gray-700 font-bold">✅ Analytics: </span>
                 With digital cards, you can track how many times your card has been viewed or scanned,
                 providing valuable insights into the effectiveness of your networking efforts. <br />
 
@@ -256,7 +251,7 @@ function Home() {
                 < span className="text-gray-700 font-bold">✅ Instant Updates: </span>
                   Company information can change over time. Digital cards allow you to update contact
                   details, promotions, or other information in real-time, ensuring recipients always have the most
-                  accurate information.
+                  accurate information. */}
 
               </div>
             </div>
@@ -292,7 +287,7 @@ function Home() {
                       data entry. <br />
 
 
-                      < span className="text-gray-700 font-bold">✅ Versatility: </span>
+                      {/* < span className="text-gray-700 font-bold">✅ Versatility: </span>
                       Digital cards can be shared across various platforms, including email, messaging
                       apps, and social media. This flexibility makes it easier to connect in the recipient's
                       preferred way. <br />
@@ -311,11 +306,11 @@ function Home() {
 
                       < span className="text-gray-700 font-bold">✅ Professional Impression:</span>
                       Embracing digital technology showcases your adaptability and modern
-                      approach to networking, leaving a positive impression on tech-savvy colleagues and partners.<br/>
+                      approach to networking, leaving a positive impression on tech-savvy colleagues and partners.<br/> */}
 
                 </div>
             </div>
-        </div>
+          </div>
         </div>
       </section>
 
@@ -396,11 +391,6 @@ function Home() {
         </div>
       </section>
 
-
-
-
-
-
       <section className="bg-white py-16" id="pricing">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-semibold text-gray-800 mb-8 text-center">
@@ -437,29 +427,25 @@ function Home() {
 
                 <button
                   onClick={() => openPopup(plan)}
-                  className={`text-white rounded-md py-3 px-6 font-semibold hover:opacity-90
-                  focus:outline-none ${plan.buttonColor}`}
+                  className={`text-white rounded-md py-3 px-6 w-full font-semibold hover:opacity-90
+                              focus:outline-none ${plan.buttonColor}`}
                 >
                   Get Started
                 </button>
+
+                {/* Conditionally render the popup */}
+                {showPopup && selectedPlan && selectedPlan.title === plan.title && (
+                  plan.title === "Individuals" ? (
+                    <PlanPopup plan={selectedPlan} onClose={closePopup} onSubmit={onSubmit} />
+                  ) : (
+                    <BusinessPlanPopup plan={selectedPlan} onClose={closePopup} onSubmit={onSubmit} />
+                  )
+                )}
               </div>
             ))}
           </div>
         </div>
-
-        {/* Render the popup */}
-        {showPopup && selectedPlan && (
-          <PlanPopup
-            plan={selectedPlan}
-            onClose={closePopup}
-            onSubmit={onSubmit}
-          />
-        )}
       </section>
-
-
-
-
 
       <section id="contact">
         <ContactUs />
