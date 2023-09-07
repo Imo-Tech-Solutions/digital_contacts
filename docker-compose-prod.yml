@@ -2,8 +2,8 @@ version: '3'
 
 services:
   web:
-    image: imotechsl/dit-web:${ENV}
-    container_name: dit-web-${ENV}
+    image: imotechsl/digicard-web:${ENV}
+    container_name: digicard-web-${ENV}
     restart: always
     ports:
       - 3000:3000

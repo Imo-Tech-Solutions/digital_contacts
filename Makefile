@@ -1,10 +1,10 @@
 build-dev:
-	ENV=development docker build -t imotechsl/dit-web:development -f Dockerfile.dev .
+	ENV=development docker build -t imotechsl/digicard-web:development -f Dockerfile.dev .
 
 
 build-prod:
 	ENV=production docker build \
-	-t imotechsl/dit-web:production \
+	-t imotechsl/digicard-web:production \
 	--build-arg NGINXFILE=./nginx/default.conf \
 	-f Dockerfile.prod .
 
@@ -16,4 +16,4 @@ run-prod:
 
 
 push-image:
-	docker push imotechsl/dit-web:production
+	docker push imotechsl/digicard-web:production
